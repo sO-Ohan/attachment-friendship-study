@@ -4,10 +4,16 @@ message: "If you use this dataset or code, please cite it."
 type: dataset
 authors:
   - family-names: Bhuiyan
-    given-names: Monjurul Hasan
+    given-names: Md. Monjurul Hasan
     affiliation: BRAC University
   - family-names: Abdullah
     given-names: Khan
+    affiliation: BRAC University
+  - family-names: Nahian
+    given-names: Azmyeen
+    affiliation: BRAC University
+  - family-names: Labib
+    given-names: KM Mahir
     affiliation: BRAC University
   - family-names: Hasan
     given-names: Tasfia

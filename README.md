@@ -4,7 +4,8 @@ Data, analysis code, and instruments for:
 
 > **How Attachment Style Shapes Fear of Rejection and Friendship Formation Among
 > BRAC University Undergraduates**
-> Bhuiyan, M. H., Abdullah, K., Hasan, T., & Mahjabin, M. (2026).
+> Bhuiyan, M. M. H., Abdullah, K., Nahian, A., Labib, K. M., Hasan, T.,
+> & Mahjabin, M. (2026).
 > PSY 101 final project, Section 11, Group 02, BRAC University.
 
 ## What the study found
