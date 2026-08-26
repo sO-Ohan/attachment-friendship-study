@@ -1,4 +1,4 @@
-# The Blueprint We Arrive With
+# Attachment Style, Fear of Rejection, and Friendship Formation
 
 Data, analysis code, and instruments for:
 
