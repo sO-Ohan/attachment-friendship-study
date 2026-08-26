@@ -1,0 +1,11 @@
+variable,F,p,eta_sq,sig
+anxiety,4.408,0.0059,0.118,**
+avoidance,1.363,0.2587,0.04,ns
+fne,4.191,0.0077,0.113,**
+scenario_anx,4.137,0.0083,0.111,**
+scenario_expect,1.584,0.1981,0.046,ns
+loneliness,11.321,0.0,0.255,***
+friends_have,7.856,0.0001,0.194,***
+friend_gap,0.767,0.5152,0.023,ns
+approach_inhibition,2.595,0.0567,0.073,ns
+convo_started,8.083,0.0001,0.197,***

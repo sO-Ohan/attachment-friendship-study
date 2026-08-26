@@ -1,0 +1,78 @@
+variable,label,type,range,n_valid,n_missing
+participant_id,Anonymous participant ID,string,P001-P104,104,0
+timestamp,Form submission time,datetime,2026-08-16 to 2026-08-18,104,0
+age,Age in years,numeric,19-26,103,1
+semester,"Semester number, parsed",numeric,1-12,102,2
+semester_raw,"Semester, as typed",string,free text,104,0
+department_raw,"Department, as typed",string,free text,104,0
+department,"Department, harmonised",categorical,CSE/EEE/MNS/...,103,1
+gender,Gender,categorical,Man/Woman/Prefer not to say,103,1
+caregiver_raw,"Caregiver, as typed",string,free text,104,0
+caregiver,Primary childhood caregiver,categorical,4 levels,104,0
+family_moves,Pre-university moves/school changes,ordinal,0-3,104,0
+friends_have,Current close friends at BRACU,count,>=0,103,1
+friends_want,Desired number of close friends,count,>=0,102,2
+friend_gap,want minus have,numeric,derived,102,2
+attachment_style,Self-selected 4-category style,categorical,Secure/Preoccupied/Dismissing/Fearful,104,0
+vignette_secure,Self-rating of secure vignette,Likert item,1-7,104,0
+vignette_preoccupied,Self-rating of preoccupied vignette,Likert item,1-7,104,0
+vignette_dismissing,Self-rating of dismissing vignette,Likert item,1-7,104,0
+vignette_fearful,Self-rating of fearful vignette,Likert item,1-7,104,0
+anxiety_1,How much do you agree? [I worry that people close to me won't care about me as much as I care about them],Likert item,see scale,104,0
+anxiety_2,How much do you agree? [I often worry that the people I am close to will leave me],Likert item,see scale,104,0
+anxiety_3,How much do you agree? [I need a lot of reassurance that I am cared about],Likert item,see scale,104,0
+anxiety_4,"How much do you agree? [When someone I care about is out of touch for a day, I start assuming something is wrong between us]",Likert item,see scale,104,0
+anxiety,"Attachment anxiety, mean of 4",numeric,1-7,104,0
+avoidance_1,And these? [I prefer not to show others how I feel deep down],Likert item,see scale,104,0
+avoidance_2,And these? [I find it difficult to depend on other people],Likert item,see scale,104,0
+avoidance_3,And these? [I get uncomfortable when someone wants to be very close to me],Likert item,see scale,104,0
+avoidance_4,And these? [I would rather solve a problem alone than ask a friend for help],Likert item,see scale,104,0
+avoidance,"Attachment avoidance, mean of 4",numeric,1-7,104,0
+scenario_anx_1,How anxious or worried would you feel doing this? [You ask a classmate you have spoken to twice if they want to sit together in the next class],Likert item,see scale,104,0
+scenario_anx_2,How anxious or worried would you feel doing this? [You ask a group in your section if you can join their project team],Likert item,see scale,104,0
+scenario_anx_3,How anxious or worried would you feel doing this? [You message someone from your club and suggest getting lunch],Likert item,see scale,104,0
+scenario_anx_4,How anxious or worried would you feel doing this? [You ask a friend to explain something you did not understand in class],Likert item,see scale,104,0
+scenario_anx_5,"How anxious or worried would you feel doing this? [You see friends posting from an outing you were not invited to, and you ask them about it]",Likert item,see scale,104,0
+scenario_anx_6,How anxious or worried would you feel doing this? [You tell a close friend that something they did upset you],Likert item,see scale,104,0
+scenario_anx,Anticipated anxiety over 6 bids,numeric,1-6,104,0
+scenario_expect_1,And how likely do you think it is that the other person says yes or reacts well? [You ask a classmate you have spoken to twice if they want to sit together in the next class],Likert item,see scale,104,0
+scenario_expect_2,And how likely do you think it is that the other person says yes or reacts well? [You ask a group in your section if you can join their project team],Likert item,see scale,104,0
+scenario_expect_3,And how likely do you think it is that the other person says yes or reacts well? [You message someone from your club and suggest getting lunch],Likert item,see scale,104,0
+scenario_expect_4,And how likely do you think it is that the other person says yes or reacts well? [You ask a friend to explain something you did not understand in class],Likert item,see scale,104,0
+scenario_expect_5,"And how likely do you think it is that the other person says yes or reacts well? [You see friends posting from an outing you were not invited to, and you ask them about it]",Likert item,see scale,104,0
+scenario_expect_6,And how likely do you think it is that the other person says yes or reacts well? [You tell a close friend that something they did upset you],Likert item,see scale,104,0
+scenario_expect,Expected acceptance over 6 bids,numeric,1-6,104,0
+fne_1,"How much is each one like you? [I worry about what other people think of me, even when I know it makes no difference]",Likert item,see scale,104,0
+fne_2,How much is each one like you? [I am afraid others will not approve of me],Likert item,see scale,104,0
+fne_3,How much is each one like you? [I am afraid that people will find fault with me],Likert item,see scale,104,0
+fne_4,"How much is each one like you? [When I am talking to someone, I worry about what they may be thinking about me]",Likert item,see scale,104,0
+fne_5,How much is each one like you? [I often worry that I will say or do the wrong thing],Likert item,see scale,104,0
+fne_6,How much is each one like you? [Sometimes I think I am too concerned with what other people think of me],Likert item,see scale,104,0
+fne,"Fear of negative evaluation, mean of 6",numeric,1-5,104,0
+loneliness_1,How often do you feel this way? [That you lack companionship],Likert item,see scale,104,0
+loneliness_2,How often do you feel this way? [That you are left out],Likert item,see scale,104,0
+loneliness_3,How often do you feel this way? [That you are isolated from others],Likert item,see scale,104,0
+loneliness,"Loneliness, mean of 3",numeric,1-4,104,0
+convo_started,Conversations started this semester,ordinal,0-4,104,0
+approach_inhibition,"Wanted to approach, then did not",ordinal,0-4,104,0
+avoid_rank_1,Avoidance rank: Speaking in class,ordinal,"1-3, blank=not selected",67,37
+avoid_sel_1,Selected as avoided: Speaking in class,binary,0/1,104,0
+avoid_rank_2,Avoidance rank: Joining a cafeteria group,ordinal,"1-3, blank=not selected",63,41
+avoid_sel_2,Selected as avoided: Joining a cafeteria group,binary,0/1,104,0
+avoid_rank_3,Avoidance rank: Club/society events,ordinal,"1-3, blank=not selected",42,62
+avoid_sel_3,Selected as avoided: Club/society events,binary,0/1,104,0
+avoid_rank_4,Avoidance rank: Group project meetings,ordinal,"1-3, blank=not selected",14,90
+avoid_sel_4,Selected as avoided: Group project meetings,binary,0/1,104,0
+avoid_rank_5,Avoidance rank: Messaging someone first,ordinal,"1-3, blank=not selected",34,70
+avoid_sel_5,Selected as avoided: Messaging someone first,binary,0/1,104,0
+avoid_rank_6,Avoidance rank: Asking a classmate for help,ordinal,"1-3, blank=not selected",24,80
+avoid_sel_6,Selected as avoided: Asking a classmate for help,binary,0/1,104,0
+n_situations_avoided,Count of situations ranked as avoided,count,0-3,104,0
+willing_followup,Willing to join interview/FGD,categorical,4 levels,104,0
+longstring,Longest run of identical Likert answers,diagnostic,1-27,104,0
+item_sd,SD across all Likert items,diagnostic,numeric,104,0
+straightlining_flag,"Low-variance responding, FLAG ONLY",diagnostic,0/1,104,0
+nonsense_row_flag,All demographics invalid,diagnostic,0/1,104,0
+undergraduate_flag,Meets undergraduate inclusion criterion,diagnostic,0/1,104,0
+graduated_flag,graduated_flag,numeric,,104,0
+analytic_sample,Included in main analysis,diagnostic,0/1,104,0

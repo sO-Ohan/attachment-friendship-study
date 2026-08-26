@@ -1,0 +1,29 @@
+participant_id,variable,original,new,reason
+P001,age,100000000,NA,biologically impossible for an undergraduate
+P001,semester,1000th,NA,not a valid semester number (1-16)
+P021,semester,Gradeuated,NA,"valid answer, not a numbered semester - respondent has graduated (see graduated_flag); row retained"
+P001,department,bAEdgveargv,NA,not a recognisable BRACU department
+P008,department,cse,CSE,case/label harmonisation only - meaning unchanged
+P011,department,Cse,CSE,case/label harmonisation only - meaning unchanged
+P015,department,Cse ,CSE,case/label harmonisation only - meaning unchanged
+P017,department,Eee,EEE,case/label harmonisation only - meaning unchanged
+P019,department,Pharmacy ,PHR,case/label harmonisation only - meaning unchanged
+P021,department,MNS (Biotech),MNS,case/label harmonisation only - meaning unchanged
+P024,department,Cse,CSE,case/label harmonisation only - meaning unchanged
+P034,department,cse,CSE,case/label harmonisation only - meaning unchanged
+P041,department,Arc,ARC,case/label harmonisation only - meaning unchanged
+P044,department,Cse,CSE,case/label harmonisation only - meaning unchanged
+P064,department,Bio,MNS,case/label harmonisation only - meaning unchanged
+P067,department,Biotech,MNS,case/label harmonisation only - meaning unchanged
+P070,department,Bba,BBA,case/label harmonisation only - meaning unchanged
+P076,department,Biotechnology ,MNS,case/label harmonisation only - meaning unchanged
+P080,department,enh,ENH,case/label harmonisation only - meaning unchanged
+P088,department,eee,EEE,case/label harmonisation only - meaning unchanged
+P094,department,Bio,MNS,case/label harmonisation only - meaning unchanged
+P095,department,Cse,CSE,case/label harmonisation only - meaning unchanged
+P104,department,ant,ENH,case/label harmonisation only - meaning unchanged
+P001,gender,homeboy,NA,not a response option offered by the form
+P058,friends_have,-3,NA,negative friend count is impossible
+P058,friends_want,-4,NA,negative friend count is impossible
+P098,friends_want,999,NA,implausible magnitude (>100 close friends)
+P001,<entire row>,all identifying fields invalid,excluded from analytic sample,every demographic field impossible or nonsense - not a good-faith response

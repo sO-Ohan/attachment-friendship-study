@@ -1,0 +1,520 @@
+[
+ {
+  "q": 1,
+  "text": "Hi, I'm P1. I'm from the EEE department and in my 5th semester. If I had a class canceled right now, I wouldn't particularly call anyone; rather, I would just go to the library and finish my studies. Or, I would finish any errands or work I have.",
+  "words": 48,
+  "idx": 0,
+  "pid": "P1"
+ },
+ {
+  "q": 1,
+  "text": "Hi, I'm P2. I'm also from the EEE department and in my 8th semester. If one of my classes got canceled, I would call one of my friends (whoever is free) and go hang out.",
+  "words": 35,
+  "idx": 1,
+  "pid": "P2"
+ },
+ {
+  "q": 1,
+  "text": "My name is P3. I'm in my 6th semester. If a situation like this happens, I'll call only one of my friends. If they're available and have a free schedule, we'll hang out or do something together. If not, I'll be on my way home.",
+  "words": 45,
+  "idx": 2,
+  "pid": "P3"
+ },
+ {
+  "q": 1,
+  "text": "Hello, I'm P4. Currently, I'm in my 6th semester in the Bio-Tech Department. If a situation like this happens, I'll also probably call one of my friends, or I'll go to the print lab and study.",
+  "words": 36,
+  "idx": 3,
+  "pid": "P4"
+ },
+ {
+  "q": 1,
+  "text": "Hello, I'm P5. I am currently in my 9th semester, and I'm in the CSE department. If one of my classes got canceled, since my house is nearby, I would probably go home and sleep.",
+  "words": 35,
+  "idx": 4,
+  "pid": "P5"
+ },
+ {
+  "q": 2,
+  "text": "So, my class has started... well, if I had to say one word, it's \"nothing,\" I guess.",
+  "words": 17,
+  "idx": 5,
+  "pid": "P1"
+ },
+ {
+  "q": 2,
+  "text": "Ordinary.",
+  "words": 1,
+  "idx": 6,
+  "pid": "P5"
+ },
+ {
+  "q": 2,
+  "text": "Arrogance.",
+  "words": 1,
+  "idx": 7,
+  "pid": "P2"
+ },
+ {
+  "q": 2,
+  "text": "Roller-coaster.",
+  "words": 1,
+  "idx": 8,
+  "pid": "P3"
+ },
+ {
+  "q": 3,
+  "text": "Okay, so I think Rafi deleted it because he thinks if he texts this, people will judge him. Or people will think he is desperate to hang out with them or something else. I think he thinks people might not take it the right way; that's why he deleted it.",
+  "words": 50,
+  "idx": 9,
+  "pid": "P1"
+ },
+ {
+  "q": 3,
+  "text": "He is in an ethical dilemma about whether he should do it or not. It's like a fight between him and himself. So, he is thinking about whether he should do it or not. He's fighting the thought of whether he should talk to them or not, I think.",
+  "words": 49,
+  "idx": 10,
+  "pid": "P2"
+ },
+ {
+  "q": 3,
+  "text": "Maybe he is fearful that if they reject his request and don't become his friends, it will be really bad for him.",
+  "words": 22,
+  "idx": 11,
+  "pid": "P4"
+ },
+ {
+  "q": 3,
+  "text": "I think that typically, the way our brain works psychologically is that we always think of two things: the best-case scenario and the worst-case scenario. And when people think of a worst-case scenario, they tend to dive into that possibility so much that they think, \"It'll end up hurting me somehow,\" or \"I'll never be able to escape this.\" But the thing is, when you attempt it in real life, it's never that severe or deep. I think in this case, Rafi is also thinking about it the same way\u2014that in the worst-case scenario, they might think he is a creep. However, the actual outcome is never this bad. Yes, he may get rejected, but it's not the same thing.",
+  "words": 120,
+  "idx": 12,
+  "pid": "P6"
+ },
+ {
+  "q": 4,
+  "text": "I think in every semester... like, I'm in my 5th semester now. When I was in my first semester, this happened a lot, especially among the freshers who wanted to socialize and talk with each other. But then, people who can't get into a friend group or circle ultimately remain alone, and some of them try in the next semester to join a friend group. But in my 5th semester, I think people, after a few semesters, don't directly approach anyone like that. What they do is try to take some initiative to socialize, and if they fail, they don't really try again. I think people become less pushy or determined to make friends after a certain time. That's what I think.",
+  "words": 122,
+  "idx": 13,
+  "pid": "P1"
+ },
+ {
+  "q": 4,
+  "text": "I agree with P1. Because if it's the first semester, everything is new: a new place, new people. Some people face a bit of trouble opening up. And yes, I have experienced something similar in my first semester myself. I have been Rafi.",
+  "words": 43,
+  "idx": 14,
+  "pid": "P5"
+ },
+ {
+  "q": 4,
+  "text": "I agree with him on what he said. Typically in the first year, when everyone is a fresher, everyone starts from a base of zero. Everyone wants to open up and be friends; everyone has the common factor of being a fresher. Over time, as our semesters progress, let's say there is already a pre-existing group. Someone new would never like to go and initiate a conversation or approach them easily because those people are friends beforehand. Going to initiate something would feel very uncomfortable. Maybe they want to remain the way they are because entering a pre-existing friend group, knowing nothing about them, and doing so all of a sudden is an unpleasant thing to experience firsthand.",
+  "words": 118,
+  "idx": 15,
+  "pid": "P2"
+ },
+ {
+  "q": 5,
+  "text": "There's nothing inherently bad here. The overall scenario had two possibilities: maybe they could have been friends, and maybe it would have been good for him. But for some reason, if Rafi feels, after interacting with them for a few days, that they are not interested or willing to make him part of their circle, then he'll probably feel left out and anxious. Both are possible.",
+  "words": 66,
+  "idx": 16,
+  "pid": "P4"
+ },
+ {
+  "q": 5,
+  "text": "I think that would be a fear factor because they did classes together for three months. Although it's not a lot of time because of the open credit system, they were still in the same class, and they rejected him directly. Now he has to go to the same class and be in the same section with them. As the scenario explains, he overthinks a lot, so it would definitely take a toll on him.",
+  "words": 75,
+  "idx": 17,
+  "pid": "P7"
+ },
+ {
+  "q": 5,
+  "text": "I think it depends on the perspective. Let's say there are three people in that group. One can be good, one can be bad, and one can be in between. So, who accepts him and who doesn't depends on how the individuals are, and it also depends on various factors. Let's say, from their perspective: a guy is trying to be friends with us, how do we treat him? Do we treat him like an object or someone we can use, or do we actually treat him as a friend? This also depends on if they are looking for friends or not, especially someone like Rafi.",
+  "words": 106,
+  "idx": 18,
+  "pid": "P8"
+ },
+ {
+  "q": 5,
+  "text": "Yes, but there is another factor here. Let's say they decided to be friends with him. If their vibes don't match, things might not work out, so that is also a factor here.",
+  "words": 33,
+  "idx": 19,
+  "pid": "P9"
+ },
+ {
+  "q": 7,
+  "text": "It could be that they like to be alone; they prefer their own company. And yes, since we're in an open credit curriculum, not all of our friends are available when we are free. So, if I like being alone, I may not want to join a new friend group. After being done with my classes, I might just leave.",
+  "words": 60,
+  "idx": 20,
+  "pid": "P4"
+ },
+ {
+  "q": 7,
+  "text": "I do agree on that point because some people might just want to be alone and like it that way. It's not because they lack confidence or anything. Every person has different behaviors, different natures, and different preferences. Some people might like being alone; some people, if they're lonely, might feel less confident. So, I think it varies from person to person.",
+  "words": 62,
+  "idx": 21,
+  "pid": "P1"
+ },
+ {
+  "q": 7,
+  "text": "I want to add to that. In my last semester, I repeated a course, so in that section, I had no friends, and it didn't even bother me, to be honest. Because when I took that course, I knew I would do well in it. I am absolutely going to do well in that course, so most of the time, I used to sit at the back. I didn't even pay attention to that class because I knew I'd do well. I used to sit at the back, the faculty knew me, and I was able to answer her questions. And yes, after finals, I did end up making some friends from that section. So, speaking for myself, if I'm in these kinds of scenarios, I can make friends pretty easily, but I don't pursue it. I'm the type of guy who believes that I don't necessarily have to belong to a certain friend group or circle. I didn't have a dedicated friend group in my school life. So, I don't think there must be a friend group where you can only sit with them and talk to them exclusively, and you have to be bound by it.",
+  "words": 198,
+  "idx": 22,
+  "pid": "P6"
+ },
+ {
+  "q": 7,
+  "text": "I also agree with him. I have been in the same situation since my first semester, but what I would always do is go and directly approach them, and pretty much always, it has worked out positively for me. And if you accumulate those situations... I think I used to care what other people might think or say about me, but now I approach people directly because past good experiences prompt me to do it.",
+  "words": 75,
+  "idx": 23,
+  "pid": "P8"
+ },
+ {
+  "q": 8,
+  "text": "I think in terms of handling this situation, it should be up to me. My personal experience is that if something like this happens to me, I'd just assume maybe there's a problem that my friend is going through and ask my other friends or figure something out myself. Because you shouldn't rely entirely on someone else. I would always like to think about this positively, mainly because of the friend itself, or maybe I am used to thinking about situations positively. Maybe both. And in my previous experiences, I found enough reasons to think about that friend and my situation in a positive way.",
+  "words": 105,
+  "idx": 24,
+  "pid": "P2"
+ },
+ {
+  "q": 8,
+  "text": "It depends on the friendship or the person whether I would text him another time in the morning or at night. If that friend is really close, my situation is actually kind of serious, and he is still unresponsive, I'll probably ask if he's okay or not. If there's really a problem and they explain it to me, I would understand or try to do something about it. If they're just being unresponsive, I don't really have anything to do about that.",
+  "words": 82,
+  "idx": 25,
+  "pid": "P1"
+ },
+ {
+  "q": 8,
+  "text": "The thing about reading a message and being \"active\" online is that we can't really tell if he has seen the message or not. Being active doesn't mean he has seen it. If it was a case where he had seen the message and hadn't replied, then there would be a problem. Besides that, it's nothing.",
+  "words": 56,
+  "idx": 26,
+  "pid": "P9"
+ },
+ {
+  "q": 8,
+  "text": "Yes, I agree as well.",
+  "words": 5,
+  "idx": 27,
+  "pid": "P4"
+ },
+ {
+  "q": 8,
+  "text": "I don't think any friend of mine would think negatively about me like that.",
+  "words": 14,
+  "idx": 28,
+  "pid": "P2"
+ },
+ {
+  "q": 8,
+  "text": "Yes. If that is the case, they're not a good friend of mine, as simple as that.",
+  "words": 17,
+  "idx": 29,
+  "pid": "P5"
+ },
+ {
+  "q": 8,
+  "text": "Why would they think like that? I don't think they will. (Mostly everybody agrees)",
+  "words": 14,
+  "idx": 30,
+  "pid": "P4"
+ },
+ {
+  "q": 8,
+  "text": "I think if I was in a position like this where I could be vulnerable and needed a friend to depend on at that time... maybe I need their help, but if I see that even in the morning that person hasn't replied, yet they are active online. Suppose I messaged at 3 AM and I have a class at 7 AM in the morning. If I still see nobody, or the one friend whom I texted hasn't replied, I would simply delete that message. Because I think four hours is enough for me to mentally get out of whatever situation has happened. I don't really want to depend that much on someone like that. I would expect them to see it and probably reply, \"Oh, sorry, bro. I accidentally didn't see the message or forgot to reply,\" or I'd expect a call later on when I am already out of that phase. I don't think this matters a lot because there's a thing called crocodile tears.",
+  "words": 167,
+  "idx": 31,
+  "pid": "P6"
+ },
+ {
+  "q": 8,
+  "text": "I think if you're vulnerable, you call them. Like, if you texted them and they haven't seen it, simply call them. (P6 agrees). So, if he is active, he would take the call.",
+  "words": 33,
+  "idx": 32,
+  "pid": "P5"
+ },
+ {
+  "q": 8,
+  "text": "Yeah. Sending a text... he might be completely fine or busy, just like I might be busy at night too. I get that. But what I'm trying to say is that if I can deal with it myself and I'm completely fine, I probably won't talk to them about that matter again. It's like I don't need you in that category anymore.",
+  "words": 62,
+  "idx": 33,
+  "pid": "P6"
+ },
+ {
+  "q": 8,
+  "text": "If I tell you about my perspective, I play games all night, and I won't see any texts. So, if someone is close to me, they know to just call me, and I will pick up the call. Sometimes it might happen that they are working. I think giving a call would be helpful, at least if I were on the other end.",
+  "words": 63,
+  "idx": 34,
+  "pid": "P5"
+ },
+ {
+  "q": 8,
+  "text": "Okay, yeah. I also play games after turning my notifications off. I can understand that perspective of not being able to see the text or that I myself might be unavailable.",
+  "words": 31,
+  "idx": 35,
+  "pid": "P6"
+ },
+ {
+  "q": 9,
+  "text": "I personally think that humans are social beings, and it is a must that they depend on each other. Now, here's the thing: if I am dependent on someone that I don't know or don't have any kind of friendship with... It's true that humans are social beings, but you cannot be constantly dependent on people. One simply can't live independently all the time. In life, you should have inner strength on your own, and on some occasions, you just have to depend on some people. From this perspective, if people need each other, that's not a sign of weakness.",
+  "words": 100,
+  "idx": 36,
+  "pid": "P1"
+ },
+ {
+  "q": 9,
+  "text": "But I do think we never should be overdependent on someone.",
+  "words": 11,
+  "idx": 37,
+  "pid": "P4"
+ },
+ {
+  "q": 9,
+  "text": "Yeah, I also agree with that. I'm just talking about the absolutely necessary portion of dependence. I can never escape or get out of things that I absolutely have to depend on people for. After all, I'm human; I need others. But if I become someone who constantly needs other people, that's completely not okay, I think.",
+  "words": 57,
+  "idx": 38,
+  "pid": "P1"
+ },
+ {
+  "q": 9,
+  "text": "I think at that point, people around them know that they can't live without someone else.",
+  "words": 16,
+  "idx": 39,
+  "pid": "P7"
+ },
+ {
+  "q": 9,
+  "text": "From the dawn of civilization, I think people mostly lived alone before becoming civilized. And after that, they realized we can't possibly live alone or as nomads. Living in a society, we need each other. No matter if it's for shelter, food, or whatever it is, it's easier to do it together. So from then on, I think it has been programmed within us.",
+  "words": 64,
+  "idx": 40,
+  "pid": "P8"
+ },
+ {
+  "q": 9,
+  "text": "It should be to a certain level. And this dependency should be on a specific amount of people. It's not like we have to go and ask for a favor from strangers. First, we have to ask people close to us. If the problem is solved, there is no need to involve random people on a broader level.",
+  "words": 58,
+  "idx": 41,
+  "pid": "P7"
+ },
+ {
+  "q": 11,
+  "text": "I think their behavior is a clear enough sign to understand that they don't want to hang out with me.",
+  "words": 20,
+  "idx": 42,
+  "pid": "P4"
+ },
+ {
+  "q": 11,
+  "text": "Body language.",
+  "words": 2,
+  "idx": 43,
+  "pid": "P2"
+ },
+ {
+  "q": 11,
+  "text": "There's a certain vibe that you can tell by.",
+  "words": 9,
+  "idx": 44,
+  "pid": "P8"
+ },
+ {
+  "q": 11,
+  "text": "Aside from that, if the person trying to fit in overthinks, they probably think, \"I feel left out here, why would I go there?\" That is also a \"no.\"",
+  "words": 29,
+  "idx": 45,
+  "pid": "P6"
+ },
+ {
+  "q": 11,
+  "text": "It's like the environment. The environment and actions are telling me whether I should stay in this group or not.",
+  "words": 20,
+  "idx": 46,
+  "pid": "P1"
+ },
+ {
+  "q": 11,
+  "text": "It's by their body language and the environment.",
+  "words": 8,
+  "idx": 47,
+  "pid": "P5"
+ },
+ {
+  "q": 11,
+  "text": "The overall environment and tone.",
+  "words": 5,
+  "idx": 48,
+  "pid": "P6"
+ },
+ {
+  "q": 11,
+  "text": "In a group, there are a lot of people. They might be talking to each other more. It's their tone, body language, and style.",
+  "words": 24,
+  "idx": 49,
+  "pid": "P9"
+ },
+ {
+  "q": 11,
+  "text": "Let's say there's a discussion, and in that discussion, they are just talking among themselves and not even trying to make me feel included. I don't have any topics to talk about, and I'm thinking, \"What should I say? What should I say?\" So, that's when I'll know I need to leave that place.",
+  "words": 54,
+  "idx": 50,
+  "pid": "P3"
+ },
+ {
+  "q": 11,
+  "text": "If they just invite me to hang out or to go someplace, they probably just included me for entertainment purposes because it'll be fun.",
+  "words": 24,
+  "idx": 51,
+  "pid": "P2"
+ },
+ {
+  "q": 11,
+  "text": "Yes, it's more than just inviting someone to go somewhere. Friendship is about the conversations, the vibe, and everything. If it's just about going somewhere together and just being there for entertainment purposes, I don't think that is a suitable group.",
+  "words": 41,
+  "idx": 52,
+  "pid": "P1"
+ },
+ {
+  "q": 11,
+  "text": "I think the same.",
+  "words": 4,
+  "idx": 53,
+  "pid": "P9"
+ },
+ {
+  "q": 12,
+  "text": "It might be because if I somehow become attached to that person and something goes wrong after that, I think I'm protecting myself from that pain or hurt.",
+  "words": 28,
+  "idx": 54,
+  "pid": "P9"
+ },
+ {
+  "q": 12,
+  "text": "I think I will agree with him. Becoming friends with someone is a hard thing. In that process, overthinking will always come.",
+  "words": 22,
+  "idx": 55,
+  "pid": "P2"
+ },
+ {
+  "q": 12,
+  "text": "I think whether or not we would close that gap depends on the friendship\u2014if they're our good friends. We'd automatically overcome that gap after becoming friends with them. It doesn't happen overnight, but it does happen quickly, and if it doesn't happen, that's not the right person or group of people you should be with.",
+  "words": 55,
+  "idx": 56,
+  "pid": "P1"
+ },
+ {
+  "q": 12,
+  "text": "If there are so many negative thoughts about that particular person, why would we even go or intend to be friends with them in the first place?",
+  "words": 27,
+  "idx": 57,
+  "pid": "P4"
+ },
+ {
+  "q": 12,
+  "text": "I think it's mostly overthinking. I wish to be friends, but I am also being careful, I think.",
+  "words": 18,
+  "idx": 58,
+  "pid": "P8"
+ },
+ {
+  "q": 12,
+  "text": "Yeah, probably this is the fear of rejection, and we think they won't be how we thought or want them to be.",
+  "words": 22,
+  "idx": 59,
+  "pid": "P2"
+ },
+ {
+  "q": 12,
+  "text": "It's on us that we think or overthink. It's our own psychological problem.",
+  "words": 13,
+  "idx": 60,
+  "pid": "P4"
+ },
+ {
+  "q": 12,
+  "text": "Yeah. Because they are unaware of the fact that I'm considering them as a friend but also thinking about all of this. (Majority agrees to this point)",
+  "words": 27,
+  "idx": 61,
+  "pid": "P6"
+ },
+ {
+  "q": 12,
+  "text": "They don't really know we are debating whether we want them as a friend or not. They are just being themselves. That's completely my problem.",
+  "words": 25,
+  "idx": 62,
+  "pid": "P6"
+ },
+ {
+  "q": 13,
+  "text": "Honestly, in the case of friendship, I had no expectations, sorry. No, I definitely didn't think I wanted to be alone or anything. I just didn't think about friendship when admitting to BRAC University. I thought a new part of my life was starting, but regarding friendship, I didn't really think about anything.",
+  "words": 53,
+  "idx": 63,
+  "pid": "P4"
+ },
+ {
+  "q": 13,
+  "text": "I didn't want to make mistakes by being friends with the wrong people. I didn't really have any expectations at first. And I went with this decision because I didn't want to make any full-fledged friendships right from the start. Because in university life, in the first year or first semester, if I befriend the wrong people, that can be harmful in the long run. That's it.",
+  "words": 67,
+  "idx": 64,
+  "pid": "P6"
+ },
+ {
+  "q": 13,
+  "text": "But how did you know they were the wrong friends?",
+  "words": 10,
+  "idx": 65,
+  "pid": "P4"
+ },
+ {
+  "q": 13,
+  "text": "Well... wrong or not depends on my morality, and I have a certain type of morality, first of all. If I found someone following and respecting the same values as me, I started to engage with them. The thing is, I don't smoke. I would like to be friends with people who don't smoke. I think I'd probably hang out with people, have conversations, and then if we had something in common, I'd consider them my friends. Yeah, I would agree that most people have a big circle at first. Then people eventually leave the circle, and it's not necessarily that they're bad people or bad friends. Personally, I didn't make that many friends in my first semester. I had a few friends. [a friend] is here; [a friend] is one of my first-semester friends. Again, I just hung around probably 5-6 people, not more than that. So, yeah, in my friend circle, there were only 4 people. It wasn't that big, and I just left because we drifted apart.",
+  "words": 168,
+  "idx": 66,
+  "pid": "P6"
+ },
+ {
+  "q": 13,
+  "text": "I also didn't consider making friends a priority when I got admitted. But in the case of making friends, I have some priorities and conditions, like our vibes should match, and we should have a solid understanding. And there is another thing people do: make friends solely for their own benefit. That is not the priority, but if it's the other way around and that friendship is costing me something, I definitely don't want that. Also, we have to connect; they have to relate in some way. It's not like we'd just go hang out or go someplace to eat, not necessarily, no... we just have to connect.",
+  "words": 108,
+  "idx": 67,
+  "pid": "P9"
+ },
+ {
+  "q": 13,
+  "text": "I don't think you have to ask someone to be friends. I personally find it very uncomfortable that you need to ask someone. It just happens. I don't have any expectations; I just go along with it. But one thing is, I definitely wouldn't like to be friends with someone who is an extremist or has an extreme mindset on any topic. Whatever it might be, I wouldn't want to stand for that. But yeah, I just like to go along with it and see what happens.",
+  "words": 87,
+  "idx": 68,
+  "pid": "P2"
+ },
+ {
+  "q": 13,
+  "text": "I needed to survive for myself; that was my expectation. What would I do, or what could I do about what other people might or might not say? Yeah, like I said, I don't care how people judge me, talk about me, or what they have to say about me. I just wanted to survive for myself.",
+  "words": 57,
+  "idx": 69,
+  "pid": "P5"
+ },
+ {
+  "q": 13,
+  "text": "So I had expectations regarding the university, but in the case of making friends or friend groups, I had no expectations. I came to this university mainly because of the resources it had to offer.",
+  "words": 35,
+  "idx": 70,
+  "pid": "P1"
+ },
+ {
+  "q": 13,
+  "text": "Kind of the same. Because it's open credit, I didn't expect people to stick around. Maybe some good section mates, some helpful people in group projects... I didn't have many expectations besides this.",
+  "words": 33,
+  "idx": 71,
+  "pid": "P7"
+ },
+ {
+  "q": 13,
+  "text": "I would like to talk about a more recent expectation. I expect a good, nerdy, full-time student would offer me a spot in their thesis group.",
+  "words": 26,
+  "idx": 72,
+  "pid": "P8"
+ },
+ {
+  "q": 13,
+  "text": "The best thing is to not expect anything from anyone. Because if they cannot meet those expectations, you'll feel bad. At the end of the day, you're on your own. Conclusion The session concluded with the moderator reassuring the participants that everything discussed during the focus group will be kept strictly confidential, as outlined in the signed consent forms. Additionally, the moderator reminded everyone that if anyone is struggling with mental health issues, professional support and resources are readily available through BRAC University's Counseling and Wellbeing Unit.",
+  "words": 87,
+  "idx": 73,
+  "pid": "P2"
+ }
+]

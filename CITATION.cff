@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "The Blueprint We Arrive With: How Attachment Style Shapes Fear of Rejection and Friendship Formation Among BRAC University Undergraduates"
+message: "If you use this dataset or code, please cite it."
+type: dataset
+authors:
+  - family-names: Bhuiyan
+    given-names: Monjurul Hasan
+    affiliation: BRAC University
+  - family-names: Abdullah
+    given-names: Khan
+    affiliation: BRAC University
+  - family-names: Hasan
+    given-names: Tasfia
+    affiliation: BRAC University
+  - family-names: Mahjabin
+    given-names: Maysha
+    affiliation: BRAC University
+date-released: 2026-08-27
+license: CC-BY-4.0
+keywords:
+  - attachment theory
+  - rejection sensitivity
+  - loneliness
+  - friendship formation
+  - self-report validity
+  - Bangladesh
