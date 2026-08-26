@@ -37,12 +37,12 @@ avoidance scales. Nine students then discussed a vignette in a focus group.
 
 | Path | Contents |
 |---|---|
-| `data/` | De-identified responses, analytic sample, codebook, cleaning audit, and every computed result as JSON |
-| `analysis/` | The six Python scripts that produce every number and figure |
-| `figures/` | All eleven figures, PDF and SVG, vector throughout |
+| `data/` | De-identified responses, the analytic sample, the codebook, and the cleaning audit |
+| `analysis/` | The five Python scripts that reproduce every number and figure |
+| `figures/` | All eleven figures as vector PDF |
 | `fgd/` | The pseudonymised focus-group transcript, coded one row per turn |
-| `instruments/` | The focus group moderator guide (survey items are in Appendix F of the report) |
-| `paper/` | The full report, including all appendices |
+| `instruments/` | The focus group moderator guide; survey items are in Appendix F of the report |
+| `paper/` | The report |
 
 ## Reproducing
 
@@ -53,7 +53,6 @@ python analysis/stats_model.py
 python analysis/stats_extra.py
 python analysis/fgd_coding.py
 python analysis/figures.py
-python analysis/make_tables.py
 ```
 
 The scripts use absolute paths from the machine they were written on; change the
