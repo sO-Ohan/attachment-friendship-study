@@ -64,21 +64,28 @@ body.idle{cursor:none}
 #stage{position:relative;width:1280px;height:720px;background:var(--surface);
   transform-origin:center center;overflow:hidden}
 
-/* ---------- ambient morphing field — the only always-on motion ---------- */
-#ambient{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-.blob{position:absolute;filter:blur(48px);opacity:.55;will-change:transform,border-radius}
-.blob.b1{width:640px;height:560px;left:-150px;top:-190px;
-  background:radial-gradient(circle at 34% 34%,rgba(47,90,168,.26),rgba(47,90,168,0) 70%);
-  border-radius:58% 42% 46% 54%/52% 46% 54% 48%;animation:m1 26s ease-in-out infinite alternate}
-.blob.b2{width:600px;height:520px;right:-170px;top:-130px;
-  background:radial-gradient(circle at 60% 40%,rgba(169,106,17,.22),rgba(169,106,17,0) 70%);
-  border-radius:44% 56% 58% 42%/48% 54% 46% 52%;animation:m2 31s ease-in-out infinite alternate}
-.blob.b3{width:740px;height:540px;left:33%;bottom:-280px;
-  background:radial-gradient(circle at 50% 50%,rgba(44,107,79,.18),rgba(44,107,79,0) 70%);
-  border-radius:52% 48% 40% 60%/44% 56% 44% 56%;animation:m3 37s ease-in-out infinite alternate}
-@keyframes m1{to{border-radius:46% 54% 58% 42%/44% 58% 42% 56%;transform:translate(48px,56px) scale(1.09)}}
-@keyframes m2{to{border-radius:60% 40% 42% 58%/56% 44% 56% 44%;transform:translate(-54px,46px) scale(1.07)}}
-@keyframes m3{to{border-radius:40% 60% 56% 44%/58% 42% 58% 42%;transform:translate(40px,-48px) scale(1.05)}}
+/* ---------- ambient field — composited drift, the only always-on motion ----------
+   Cheap by construction: the softness is baked into the radial gradients, so no
+   filter:blur() layer is re-rasterised, and only `transform` animates — which the
+   compositor handles on its own thread without a single repaint. ---------------- */
+#ambient{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;
+  contain:strict}
+.blob{position:absolute;opacity:.55;will-change:transform;backface-visibility:hidden}
+.blob.b1{width:900px;height:820px;left:-380px;top:-410px;
+  background:radial-gradient(closest-side circle at 50% 50%,
+    rgba(47,90,168,.24),rgba(47,90,168,.12) 42%,rgba(47,90,168,0) 72%);
+  animation:m1 26s ease-in-out infinite alternate}
+.blob.b2{width:860px;height:790px;right:-300px;top:-270px;
+  background:radial-gradient(closest-side circle at 50% 50%,
+    rgba(169,106,17,.21),rgba(169,106,17,.10) 42%,rgba(169,106,17,0) 72%);
+  animation:m2 31s ease-in-out infinite alternate}
+.blob.b3{width:980px;height:800px;left:26%;bottom:-420px;
+  background:radial-gradient(closest-side circle at 50% 50%,
+    rgba(44,107,79,.17),rgba(44,107,79,.08) 42%,rgba(44,107,79,0) 72%);
+  animation:m3 37s ease-in-out infinite alternate}
+@keyframes m1{to{transform:translate3d(48px,56px,0) scale(1.09)}}
+@keyframes m2{to{transform:translate3d(-54px,46px,0) scale(1.07)}}
+@keyframes m3{to{transform:translate3d(40px,-48px,0) scale(1.05)}}
 
 /* ---------- per-speaker running time bars ---------- */
 #rail{position:absolute;top:0;left:0;right:0;height:54px;display:flex;align-items:center;
@@ -99,9 +106,19 @@ body.idle{cursor:none}
 .seg.over .tm{color:var(--error)}
 
 /* ---------- slides ---------- */
+/* Only the live slide is rendered. `content-visibility:hidden` makes the browser
+   skip style, layout, paint and animation ticking for every other slide's subtree,
+   which is where almost all of the idle cost used to sit. The discrete transition
+   keeps the outgoing slide painted for the length of the cross-fade. */
 .slide{position:absolute;inset:54px 0 40px 0;opacity:0;visibility:hidden;z-index:10;
-  transition:opacity .34s ease,visibility 0s linear .34s}
-.slide.live{opacity:1;visibility:visible;transition:opacity .38s ease .04s,visibility 0s}
+  content-visibility:hidden;
+  transition:opacity .34s ease,visibility 0s linear .34s,
+             content-visibility .34s allow-discrete}
+.slide.live{opacity:1;visibility:visible;content-visibility:visible;
+  transition:opacity .38s ease .04s,visibility 0s,content-visibility 0s}
+/* belt-and-braces for engines without content-visibility: never tick an
+   off-screen slide's decorative loops */
+.slide:not(.live),.slide:not(.live) *{animation-play-state:paused!important}
 .gut{display:none}
 .body{position:absolute;inset:0;padding:20px 56px 16px 56px;
   display:flex;flex-direction:column;justify-content:center}
@@ -469,16 +486,6 @@ table.rt tr.mute td{color:var(--on-surface-mut)}
 body.still .rv{opacity:1 !important;transform:none !important;transition:none !important}
 body.still .tilt>*{opacity:1 !important;transform:none !important;transition:none !important}
 body.still .blob{animation:none !important}
-
-/* ---------- continuously moving accents (never decorative-only: they mark the live slide) ---------- */
-  animation:fl1 17s ease-in-out infinite alternate}
-#floaters i.f2{width:26px;height:26px;border:3px solid var(--tertiary);background:none;
-  right:9%;top:34%;animation:fl2 23s ease-in-out infinite alternate}
-#floaters i.f3{width:11px;height:11px;background:var(--success);right:22%;bottom:16%;
-  animation:fl3 19s ease-in-out infinite alternate}
-@keyframes fl1{to{transform:translate(64px,88px) scale(1.5)}}
-@keyframes fl2{to{transform:translate(-78px,52px) rotate(140deg) scale(.8)}}
-@keyframes fl3{to{transform:translate(52px,-70px) scale(1.4)}}
 
 /* small icon motion inside the geometric illustrations */
 .spin{transform-origin:34px 30px;animation:sp 14s linear infinite}
@@ -1442,7 +1449,7 @@ function dotsPlay(){
   $$(".dot").forEach(function(d){ d.classList.remove("fill"); d.style.background=""; });
   var f = $$(".dot").filter(function(d){ return d.dataset.f==="1"; });
   f.forEach(function(d,k){
-    setTimeout(function(){ d.classList.add("fill"); d.style.background = css(d.dataset.c); }, 420 + k*110);
+    ST(function(){ d.classList.add("fill"); d.style.background = css(d.dataset.c); }, 420 + k*110);
   });
 }
 var QDATA=[{q:1,n:5,e:0},{q:2,n:4,e:0},{q:3,n:4,e:0},{q:4,n:3,e:1},{q:5,n:4,e:0},
@@ -1458,7 +1465,7 @@ function qstrip(){
     col.appendChild(bar); col.appendChild(lab); host.appendChild(col);
     var h = d.s ? 5 : Math.max(6,(d.n/11)*36);
     if (STILL) bar.style.height = h+"px";
-    else setTimeout(function(){ bar.style.height = h+"px"; }, 220 + k*45);
+    else ST(function(){ bar.style.height = h+"px"; }, 220 + k*45);
   });
 }
 
@@ -1466,8 +1473,9 @@ function qstrip(){
    slide 00 — typing, then deleting
    ============================================================ */
 var MSG = "hey, mind if I sit here?", tT = null;
+function typeStop(){ clearTimeout(tT); tT = null; }
 function typePlay(){
-  clearTimeout(tT);
+  typeStop();
   var out=$("#typed"), ph=$("#ph"), n=$("#s0n"), box=$("#s0count");
   out.textContent=""; ph.style.display=""; n.textContent="0"; box.classList.remove("hot");
   var i=0;
@@ -1504,6 +1512,7 @@ function buildBook(){
   }
   var st = document.createElement("style"); st.textContent = rules;
   document.head.appendChild(st);
+  paintPages();                       /* re-appends the sliced rules after this one */
   flip = new St.PageFlip(host, {
     width:PW, height:PH, size:"fixed", showCover:true,
     maxShadowOpacity:.62, flippingTime:520, usePortrait:false,
@@ -1515,6 +1524,59 @@ function buildBook(){
     $("#pgcount").textContent = "p. " + p;
   });
 }
+/* ------------------------------------------------------------------
+   The 45 pages ship as one 3519x2530 sprite sheet. That is the right way to
+   *deliver* them and the wrong way to *paint* them: every page div then samples
+   a 9-megapixel source through background-size, and the compositor re-rasterises
+   that source on every frame of a 3D page flip. Measured: slide 08 ran at 1 fps.
+
+   So slice the sheet once, quietly after boot, into 45 page-sized images and
+   hand each page its own 384x497 texture. Nothing about the build or the assets
+   changes — the work happens in the browser, in chunks, long before slide 08.
+   ------------------------------------------------------------------ */
+var pageURLs = null, pageSt = null;
+function paintPages(){
+  if (!pageURLs) return;
+  var r = "", whole = true;
+  for (var i=0;i<NP;i++){
+    if (!pageURLs[i]) { whole = false; continue; }
+    r += '#book .pg[data-i="'+i+'"]{background-image:url("'+pageURLs[i]+
+         '");background-position:0 0;background-size:'+PW+"px "+PH+"px}";
+  }
+  if (!pageSt) pageSt = document.createElement("style");
+  pageSt.textContent = r;
+  document.head.appendChild(pageSt);   /* moves it last, so it wins the cascade */
+  /* nothing paints from the sheet any more — let the big decode go */
+  if (whole){
+    document.documentElement.style.setProperty("--sheet", "none");
+    window.__SHEET__ = "";
+  }
+}
+function sliceSheet(){
+  var src = window.__SHEET__;
+  if (!src || typeof HTMLCanvasElement === "undefined") return;
+  var im = new Image();
+  im.onload = function(){
+    var urls = new Array(NP), left = NP, i = 0;
+    (function chunk(){
+      for (var end = Math.min(NP, i+5); i < end; i++) (function(k){
+        var cv = document.createElement("canvas");
+        cv.width = PW; cv.height = PH;
+        cv.getContext("2d").drawImage(im, -(k%COLS)*PW, -Math.floor(k/COLS)*PH);
+        var take = function(b){
+          if (b) urls[k] = URL.createObjectURL(b);
+          if (--left === 0){ pageURLs = urls; paintPages(); }
+        };
+        if (cv.toBlob) cv.toBlob(take, "image/jpeg", .9);
+        else take(null);
+      })(i);
+      if (i < NP) setTimeout(chunk, 24);
+    })();
+  };
+  im.onerror = function(){};
+  im.src = src;
+}
+
 function bookPlay(){
   buildBook();
   clearTimeout(bookSeq);
@@ -1551,8 +1613,20 @@ function bookPlay(){
 /* ============================================================
    slide 12 — two live simulations, in place of two formulas
    ============================================================ */
-var simRAF=null, simT=null;
-function stopSims(){ cancelAnimationFrame(simRAF); clearTimeout(simT); simRAF=simT=null; }
+var simRAF=null, simTA=null, simTB=null, simDraw=[], simSkip=0;
+function stopSims(){
+  if (simRAF) cancelAnimationFrame(simRAF);
+  clearTimeout(simTA); clearTimeout(simTB);
+  simRAF=simTA=simTB=null; simDraw=[];
+}
+/* one rAF for both canvases, throttled to ~30fps: the sims are stochastic
+   scatter, and nothing in them reads as smoother at 60 */
+function simLoop(){
+  simRAF = requestAnimationFrame(simLoop);
+  if (document.hidden) return;
+  if ((simSkip ^= 1)) return;
+  for (var k=0;k<simDraw.length;k++) simDraw[k]();
+}
 
 /* A · hide one student, guess them from the rest, 103 times */
 function simHideOne(){
@@ -1607,7 +1681,6 @@ function simHideOne(){
     }
     bar(BY-6, scoreS, css("error"),   "rating scales");
     bar(BY+16, scoreP, css("primary"), "the paragraph");
-    simRAF=requestAnimationFrame(frame);
   }
   function advance(){
     phase++;
@@ -1619,11 +1692,11 @@ function simHideOne(){
         scoreP += ( 0.126-scoreP)*0.35;
       }
       held = i<N ? i : -1;
-      if(i>=N){ simT=setTimeout(function(){ i=0;held=-1;scoreS=0;scoreP=0;simT=setTimeout(advance,600); },1500); return; }
+      if(i>=N){ simTA=setTimeout(function(){ i=0;held=-1;scoreS=0;scoreP=0;simTA=setTimeout(advance,600); },1500); return; }
     }
-    simT=setTimeout(advance, 11);
+    simTA=setTimeout(advance, 11);
   }
-  i=0; held=0; phase=0; advance(); frame();
+  i=0; held=0; phase=0; advance(); simDraw.push(frame);
 }
 
 /* B · reshuffle who opened up, 1000 times, and see how rarely chance matches us */
@@ -1677,21 +1750,20 @@ function simShuffle(){
     x.textAlign="right";
     x.fillText(runs>60 ? "about 6 in every 1,000" : "\u2026", BR, 44);
     if(flash>0) flash-=0.08;
-    simRAF=requestAnimationFrame(frame);
   }
   function loop(){
     for(var k=0;k<16;k++) shuffle();
-    if(runs>=1000){ simT=setTimeout(function(){
-      bins=new Array(30).fill(0); runs=0; extreme=0; simT=setTimeout(loop,400); },3400); return; }
-    simT=setTimeout(loop, 16);
+    if(runs>=1000){ simTB=setTimeout(function(){
+      bins=new Array(30).fill(0); runs=0; extreme=0; simTB=setTimeout(loop,400); },3400); return; }
+    simTB=setTimeout(loop, 16);
   }
-  loop(); frame();
+  loop(); simDraw.push(frame);
 }
 function simsPlay(){
   stopSims();
-  /* both canvases share one rAF chain, so drive them from a single loop */
   simHideOne();
-  setTimeout(simShuffle, 30);
+  simShuffle();
+  simLoop();
 }
 
 /* ============================================================
@@ -1699,8 +1771,16 @@ function simsPlay(){
    ============================================================ */
 var STILL = /(\?|&)still\b/.test(location.search);
 if (STILL) document.body.classList.add("still");
+
+/* entrance work is scheduled through ST() so that go() can cancel all of it at
+   once — otherwise a slide's staggered reveals keep touching the DOM for
+   seconds after it has left the screen */
+var slideT = [];
+function ST(fn, ms){ var h = setTimeout(fn, ms); slideT.push(h); return h; }
+function clearSlideT(){ for (var k=0;k<slideT.length;k++) clearTimeout(slideT[k]); slideT.length=0; }
 var betShown=false, betFallback=null, unitMode="sit";
 function enter(id){
+  clearSlideT();
   var slide = $("#"+id);
   if (STILL){
     $$(".rv, .tilt", slide).forEach(function(n){ n.classList.add("go"); });
@@ -1710,11 +1790,11 @@ function enter(id){
     });
   }
   $$(".rv", slide).forEach(function(n){ n.classList.remove("go"); });
-  $$(".rv", slide).forEach(function(n,k){ setTimeout(function(){ n.classList.add("go"); }, 110+k*95); });
+  $$(".rv", slide).forEach(function(n,k){ ST(function(){ n.classList.add("go"); }, 110+k*95); });
   $$(".tilt", slide).forEach(function(n){
-    n.classList.remove("go"); setTimeout(function(){ n.classList.add("go"); }, 260);
+    n.classList.remove("go"); ST(function(){ n.classList.add("go"); }, 260);
   });
-  if (!STILL) $$("[data-to]", slide).forEach(function(n,k){ setTimeout(function(){ countUp(n); }, 250+k*140); });
+  if (!STILL) $$("[data-to]", slide).forEach(function(n,k){ ST(function(){ countUp(n); }, 250+k*140); });
 
   if (id==="s0") typePlay();
 
@@ -1725,13 +1805,13 @@ function enter(id){
     });
     var bar=$("#readbar i"); bar.style.transition="none"; bar.style.width="0%";
     void bar.offsetWidth;
-    setTimeout(function(){ bar.style.transition="width 10s linear"; bar.style.width="100%"; }, 820);
+    ST(function(){ bar.style.transition="width 10s linear"; bar.style.width="100%"; }, 820);
   }
 
   if (id==="s6"){
     $$(".hyp", slide).forEach(function(h){ h.classList.remove("settled","held","broke"); });
     [1400,2150,2750].forEach(function(t,k){
-      setTimeout(function(){
+      ST(function(){
         var h=$$(".hyp", slide)[k];
         h.classList.add("settled", h.dataset.verdict);
         anime({ targets:h, scale:[1,1.03,1], duration:520, easing:"easeOutQuad" });
@@ -1743,7 +1823,7 @@ function enter(id){
     qstrip();
     var w=$("#broll-wrap"), v=$("#broll");
     w.classList.remove("on");
-    setTimeout(function(){ w.classList.add("on"); try{ v.currentTime=0; v.play(); }catch(e){} }, 1000);
+    ST(function(){ w.classList.add("on"); try{ v.currentTime=0; v.play(); }catch(e){} }, 1000);
   }
 
   if (id==="s8") bookPlay();
@@ -1802,12 +1882,18 @@ function unstep(id){
    navigation
    ============================================================ */
 var cur=-1, autoT=null;
+function leave(id){
+  clearSlideT(); stopSims(); typeStop();
+  clearTimeout(bookSeq); clearTimeout(betFallback);
+  if (id==="s7"){ var v=$("#broll"); try{ v.pause(); }catch(e){} $("#broll-wrap").classList.remove("on"); }
+}
 function go(n){
   n = clamp(n, 0, SLIDES.length-1);
   if (n===cur) return;
-  clearTimeout(autoT); clearTimeout(bookSeq); stopSims();
+  clearTimeout(autoT);
   var prev = SLIDES[cur], s = SLIDES[n];
-  if (prev) $("#"+prev.id).classList.remove("live");
+  if (prev) { leave(prev.id); $("#"+prev.id).classList.remove("live"); }
+  else { clearSlideT(); stopSims(); }
   cur = n;
   $("#"+s.id).classList.add("live");
   $$(".seg").forEach(function(d,k){
@@ -1843,22 +1929,24 @@ function notes(){
 }
 function fmt(t){ t=Math.max(0,Math.round(t)); return Math.floor(t/60)+":"+String(t%60).padStart(2,"0"); }
 function spStart(k){ var t=0; for (var i=0;i<k;i++) t+=SPEAKERS[i].secs; return t; }
+var segEls = $$(".seg"), segFills = segEls.map(function(d){ return $(".fill", d); });
+var clockEl = $("#n-clock"), lastClock = "", lastW = [];
 setInterval(function(){
+  if (document.hidden) return;
   if (running) elapsed = (performance.now()-t0)/1000;
   var s = SLIDES[cur] || SLIDES[0], sp = SPEAKERS[s.sp];
   /* the bar measures this speaker's own slot, not the whole talk */
   var into = (segT0 && segSp === s.sp) ? (performance.now()-segT0)/1000 : 0;
-  var left = sp.secs - into;
-  var c = $("#n-clock");
-  c.innerHTML = "<b>"+fmt(elapsed)+"</b> / "+fmt(total)+" &nbsp;·&nbsp; " +
+  var html = "<b>"+fmt(elapsed)+"</b> / "+fmt(total)+" &nbsp;·&nbsp; " +
     sp.name.split(" ")[0]+" "+fmt(clamp(into,0,1e9))+" / "+fmt(sp.secs);
-  c.classList.toggle("over", into > sp.secs+4);
-  $$(".seg").forEach(function(d,k){
-    var f=$(".fill",d);
-    if (k!==s.sp){ f.style.width = k<s.sp?"100%":"0"; d.classList.remove("over"); return; }
-    f.style.width = clamp(into/sp.secs,0,1)*100+"%";
-    d.classList.toggle("over", into > sp.secs);
-  });
+  if (html !== lastClock){ clockEl.innerHTML = lastClock = html; }
+  clockEl.classList.toggle("over", into > sp.secs+4);
+  for (var k=0;k<segEls.length;k++){
+    var w = k===s.sp ? clamp(into/sp.secs,0,1)*100 : (k<s.sp ? 100 : 0);
+    w = Math.round(w*10)/10;
+    if (w !== lastW[k]){ segFills[k].style.width = (lastW[k]=w) + "%"; }
+    segEls[k].classList.toggle("over", k===s.sp && into > sp.secs);
+  }
 }, 200);
 
 /* ---------- overview ---------- */
@@ -1924,6 +2012,7 @@ bv.addEventListener("error", function(){
 }, true);
 bv.src = window.__BROLL__;
 document.documentElement.style.setProperty("--sheet", 'url("'+window.__SHEET__+'")');
+setTimeout(sliceSheet, 1200);   /* off the title slide's critical path */
 var boot = parseInt((location.hash||"").slice(1),10);
 go(isNaN(boot)?0:boot);
 setTimeout(function(){ helpEl.classList.add("on"); }, 600);
