@@ -426,22 +426,7 @@ table.rt tr.mute td{color:var(--on-surface-mut)}
 .verdicts .vh{font-family:var(--mono);font-size:12px;font-weight:600}
 .verdicts .vt{font-size:11.4px;margin-top:4px;line-height:1.36}
 .verdicts .vs{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-top:6px}
-.closecols{display:grid;grid-template-columns:1.25fr .9fr;gap:44px;align-items:start;margin-top:20px}
-.rec{display:flex;gap:16px;padding:13px 0}
-.rec+.rec{border-top:1px solid var(--outline)}
-.rec .n{width:30px;height:30px;border-radius:99px;background:var(--primary-c);color:var(--on-primary-c);
-  display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;
-  font-weight:600;flex:none}
-.rec .t{font-size:15.2px;line-height:1.5;color:var(--on-surface-var)}
-.rec .t b{color:var(--on-surface);font-weight:600}
-.echo .compose{background:linear-gradient(150deg,var(--success-c),rgba(215,235,224,.4))}
 #s14 .body{justify-content:flex-start;padding-top:18px}
-#s14 .credits{position:absolute;left:56px;right:56px;bottom:10px;display:flex;
-  justify-content:space-between;align-items:flex-end;gap:20px}
-#s14 .credits .team{display:flex;flex-wrap:wrap;gap:7px}
-#s14 .credits .team span{font-size:11px;color:var(--on-surface-var);background:var(--surface-2);
-  padding:5px 12px;border-radius:99px}
-#s14 .credits .rt{font-size:10.5px;color:var(--on-surface-mut);text-align:right;line-height:1.5;flex:none}
 
 /* ============================================================ overlays */
 #notes{position:fixed;left:0;right:0;bottom:0;z-index:200;background:var(--surface);
@@ -525,16 +510,6 @@ body.still .blob{animation:none !important}
   color:var(--on-surface);margin-bottom:2px}
 
 
-/* ---------- close: thank you + roster ---------- */
-#s14 .credits{align-items:flex-end}
-.thanks{font-family:var(--display);font-size:38px;font-weight:600;letter-spacing:-.02em;
-  color:var(--on-surface);line-height:1}
-.thanks span{display:block;font-size:12.5px;font-weight:500;color:var(--on-surface-mut);
-  letter-spacing:0;margin-top:8px}
-.roster{display:grid;grid-template-columns:repeat(3,auto);gap:9px 26px;justify-items:end}
-.roster .r{text-align:right;line-height:1.3}
-.roster .r b{display:block;font-size:12.4px;font-weight:600;color:var(--on-surface)}
-.roster .r i{font-style:normal;font-size:11px;color:var(--on-surface-mut)}
 
 body.still .spin,body.still .spinSlow,body.still .pulseA,
 body.still .pulseB,body.still .bobA,body.still .bobB,body.still .growB,
@@ -545,7 +520,8 @@ body.still .mute,body.still #bookwrap{animation:none !important}
 .pane{border-radius:var(--r-lg);padding:15px 18px 13px;box-shadow:var(--e1);
   background:linear-gradient(155deg,var(--surface-2),rgba(247,244,238,.32))}
 .pane h3{font-size:12px;margin-bottom:9px}
-.pane canvas{display:block;width:100%;height:auto}
+/* !important so Chart.js's inline retina sizing cannot un-fluid these */
+.pane canvas{display:block;width:100%!important;height:auto!important}
 .legend{display:flex;align-items:center;gap:18px;margin-top:6px;font-size:11px;
   color:var(--on-surface-var)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
@@ -563,11 +539,133 @@ table.models td.r{text-align:right;font-family:var(--mono);font-size:13px;font-w
 table.models td.r u{display:block;text-decoration:none;font-family:var(--sans);font-size:10.5px;
   font-weight:500;color:var(--on-surface-mut);margin-top:2px}
 
+/* ============================================================ 14 · the close
+   A sign-off, not a summary page: one sentence, two takeaways, the callback
+   to the opening message, and the six names on a single quiet line. */
+/* the three bands distribute themselves: kicker, the close, the sign-off */
+#s14 .body{justify-content:space-between;padding:26px 56px 24px}
+.closegrid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;
+  align-items:center}
+.closeline{font-size:38px;line-height:1.14;letter-spacing:-.022em;max-width:25ch}
+.closeline em{font-style:normal;color:var(--primary)}
+.takeaways{margin-top:28px;display:flex;flex-direction:column;gap:15px}
+.tk{display:flex;gap:14px;align-items:center;font-size:17px;line-height:1.45;
+  color:var(--on-surface-var)}
+.tk b{color:var(--on-surface);font-weight:600}
+.tk .n{flex:none;width:29px;height:29px;border-radius:99px;display:grid;place-items:center;
+  background:var(--primary-c);color:var(--on-primary-c);
+  font-family:var(--mono);font-size:11px;font-weight:700}
+.echo{border-radius:var(--r-lg);padding:20px 24px 24px;box-shadow:var(--e1);
+  background:linear-gradient(155deg,var(--success-c),rgba(215,235,224,.34))}
+.castpair{width:148px;height:111px;margin:-6px 0 2px -6px}
+.echo .compose{margin-top:12px;background:rgba(253,252,249,.9);box-shadow:var(--e1)}
+.signoff{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.thanks{font-family:var(--display);font-size:44px;font-weight:600;letter-spacing:-.025em;
+  color:var(--on-surface);line-height:1}
+.thanks span{display:block;font-size:12.5px;font-weight:500;color:var(--on-surface-mut);
+  letter-spacing:0;margin-top:9px}
+/* names never break mid-name; the dots are drawn, not typed */
+.team{font-size:11.8px;color:var(--on-surface-mut);line-height:1.7;text-align:right;
+  max-width:60ch;padding-bottom:6px}
+.team span{white-space:nowrap}
+.team span+span:before{content:"·";margin:0 7px;opacity:.55}
+
+/* ============================================================
+   the cast — flat pictograms, sized and placed per slide
+   ============================================================ */
+.cast{display:block;overflow:visible}
+/* 03 · him, and the table he does not join */
+.castwide{width:252px;height:111px;margin:18px 0 4px -8px}
+/* 07 · the nine in the room */
+.qfoot{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-top:7px}
+.castring{width:62px;height:62px;flex:none;opacity:.9}
+/* 11 · the question that got nothing back */
+.castquiet{width:158px;height:100px;margin:0 0 12px -4px}
+
+/* ============================================================
+   stage light — the deck should read as a stage, not a document.
+   One static overlay: a wash from above and the faintest falloff into the
+   corners. Static, so it rasterises once and costs nothing per frame.
+   ============================================================ */
+#stage:after{content:"";position:absolute;inset:0;z-index:30;pointer-events:none;
+  background:
+    radial-gradient(122% 74% at 50% -16%, rgba(255,255,255,.62), rgba(255,255,255,0) 56%),
+    radial-gradient(132% 104% at 50% 44%, rgba(27,26,24,0) 54%, rgba(27,26,24,.06) 100%)}
+
 </style>
 </head>
 <body>
 <div id="viewport">
 <div id="stage">
+
+  <!-- ═══════════ the cast ═══════════
+       Four flat pictograms with a bit of personality, reused by <use>. They are
+       deliberately geometric and palette-locked: warm enough to carry a stage,
+       restrained enough to sit in an academic talk. -->
+  <svg id="cast-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- one figure: solid head, soft torso. Everything below is built from it. -->
+      <symbol id="fig-alone" viewBox="0 0 190 84">
+        <g transform="translate(0,6)">
+          <circle cx="22" cy="15" r="10" fill="#2F5AA8"/>
+          <path d="M8 70V40a14 14 0 0 1 28 0v30z" fill="#2F5AA8" opacity=".26"/>
+          <rect x="35" y="41" width="13" height="19" rx="3.5" fill="#FDFCF9"
+                stroke="#2F5AA8" stroke-width="2.4"/>
+        </g>
+        <g transform="translate(98,12) scale(.82)" opacity=".44">
+          <circle cx="22" cy="15" r="10" fill="#A96A11"/>
+          <path d="M8 70V40a14 14 0 0 1 28 0v30z" fill="#A96A11" opacity=".5"/>
+          <g transform="translate(34,0)">
+            <circle cx="22" cy="15" r="10" fill="#2C6B4F"/>
+            <path d="M8 70V40a14 14 0 0 1 28 0v30z" fill="#2C6B4F" opacity=".5"/>
+          </g>
+          <g transform="translate(68,0)">
+            <circle cx="22" cy="15" r="10" fill="#A96A11"/>
+            <path d="M8 70V40a14 14 0 0 1 28 0v30z" fill="#A96A11" opacity=".5"/>
+          </g>
+        </g>
+      </symbol>
+
+      <!-- the nine in the room, and the moderator in the middle -->
+      <symbol id="fig-circle" viewBox="0 0 96 96">
+        <circle cx="48" cy="48" r="31" fill="none" stroke="#A96A11"
+                stroke-width="2" stroke-dasharray="5 6" opacity=".45"/>
+        <g fill="#A96A11">
+          <circle cx="48" cy="13" r="6.6"/><circle cx="73" cy="23" r="6.6" opacity=".85"/>
+          <circle cx="83" cy="48" r="6.6" opacity=".7"/><circle cx="73" cy="73" r="6.6" opacity=".85"/>
+          <circle cx="48" cy="83" r="6.6"/><circle cx="23" cy="73" r="6.6" opacity=".85"/>
+          <circle cx="13" cy="48" r="6.6" opacity=".7"/><circle cx="23" cy="23" r="6.6" opacity=".85"/>
+        </g>
+        <circle cx="48" cy="48" r="8.5" fill="#2F5AA8"/>
+      </symbol>
+
+      <!-- asked for a story, got an empty bubble back -->
+      <symbol id="fig-quiet" viewBox="0 0 132 84">
+        <g transform="translate(0,6)">
+          <circle cx="22" cy="15" r="10" fill="#B3261E" opacity=".85"/>
+          <path d="M8 70V40a14 14 0 0 1 28 0v30z" fill="#B3261E" opacity=".2"/>
+        </g>
+        <path d="M62 12h58a8 8 0 0 1 8 8v28a8 8 0 0 1-8 8H84l-13 13V56h-9a8 8 0 0 1-8-8V20a8 8 0 0 1 8-8z"
+              fill="none" stroke="#837E76" stroke-width="2.3" stroke-linejoin="round" opacity=".8"/>
+        <g fill="#837E76" opacity=".4">
+          <circle cx="80" cy="34" r="3.2"/><circle cx="94" cy="34" r="3.2"/><circle cx="108" cy="34" r="3.2"/>
+        </g>
+      </symbol>
+
+      <!-- two people, one actually leaning in -->
+      <symbol id="fig-pair" viewBox="0 0 112 84">
+        <g transform="translate(2,6)">
+          <circle cx="22" cy="15" r="10" fill="#2C6B4F"/>
+          <path d="M8 70V40a14 14 0 0 1 28 0v30z" fill="#2C6B4F" opacity=".26"/>
+        </g>
+        <g transform="translate(52,6) rotate(-8 22 45)">
+          <circle cx="22" cy="15" r="10" fill="#2F5AA8"/>
+          <path d="M8 70V40a14 14 0 0 1 28 0v30z" fill="#2F5AA8" opacity=".26"/>
+        </g>
+        <circle cx="101" cy="15" r="4.6" fill="#A96A11" opacity=".8"/>
+      </symbol>
+    </defs>
+  </svg>
 
   <div id="ambient"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
   <div id="rail"></div>
@@ -635,6 +733,7 @@ table.models td.r u{display:block;text-decoration:none;font-family:var(--sans);f
       <div class="split">
         <div>
           <p class="lede rv">A model built at home does not stay at home.</p>
+          <svg class="cast castwide rv" viewBox="0 0 190 84" aria-hidden="true"><use href="#fig-alone"/></svg>
           <div class="rv" style="margin-top:24px">
             <div class="xs" style="margin-bottom:10px">Every dot is one student we surveyed.</div>
             <div class="dotgrid" id="dg3"></div>
@@ -784,7 +883,10 @@ table.models td.r u{display:block;text-decoration:none;font-family:var(--sans);f
             </div>
           </div>
           <div id="qstrip"></div>
-          <div class="xs" style="margin-top:7px">Fourteen questions. <b style="color:var(--error)">Red</b> produced nothing at all.</div>
+          <div class="qfoot">
+            <div class="xs">Fourteen questions. <b style="color:var(--error)">Red</b> produced nothing at all.</div>
+            <svg class="cast castring" viewBox="0 0 96 96" aria-hidden="true"><use href="#fig-circle"/></svg>
+          </div>
         </div>
         <div>
           <div id="broll-wrap">
@@ -803,10 +905,10 @@ table.models td.r u{display:block;text-decoration:none;font-family:var(--sans);f
       <div id="bookstage"><div id="bookwrap"><div id="book"></div></div></div>
       <div id="pgcount">p. 1</div>
       <div id="bookfacts">
-        <div class="f"><div class="v">45</div><div class="k">pages</div></div>
-        <div class="f"><div class="v">8</div><div class="k">appendices</div></div>
-        <div class="f"><div class="v">10,000</div><div class="k">bootstrap resamples</div></div>
-        <div class="f"><div class="v">1</div><div class="k">fixed seed, so it reproduces exactly</div></div>
+        <div class="f"><div class="v">45</div><div class="k">pages, written up in full</div></div>
+        <div class="f"><div class="v">4</div><div class="k">attachment styles, compared separately</div></div>
+        <div class="f"><div class="v">6</div><div class="k">situations, each rated twice</div></div>
+        <div class="f"><div class="v">3</div><div class="k">results &mdash; two of them nulls</div></div>
       </div>
     </div>
   </section>
@@ -895,6 +997,7 @@ table.models td.r u{display:block;text-decoration:none;font-family:var(--sans);f
           <div class="plain rv" style="margin-top:22px">The harder we asked, the <b>less</b> people told us.</div>
         </div>
         <div>
+          <svg class="cast castquiet rv" viewBox="0 0 132 84" aria-hidden="true"><use href="#fig-quiet"/></svg>
           <h3 class="rv">Where all 71 answers went</h3>
           <div class="stance rv" id="stance">
             <div style="flex:16.9;background:var(--tertiary)"></div>
@@ -984,28 +1087,31 @@ table.models td.r u{display:block;text-decoration:none;font-family:var(--sans);f
   <section class="slide" id="s14">
     <div class="body">
       <div class="kick">Conclusion</div>
-      <h1 class="rv" style="max-width:30ch;font-size:34px">The paragraph a person recognised themselves in predicted their friendships. Two validated scales did not.</h1>
-      <div class="closecols">
+      <div class="closegrid">
         <div>
-          <div class="rec rv"><div class="n">01</div><div class="t"><b>Offer recognition, not assessment.</b> Descriptions to see yourself in, not scales to score yourself on.</div></div>
-          <div class="rec rv"><div class="n">02</div><div class="t"><b>Give them an academic reason to talk.</b> Study partners, help desks, rotating seating.</div></div>
+          <h1 class="rv closeline">A paragraph people recognised themselves in
+            predicted their friendships. <em>Two scales did not.</em></h1>
+          <div class="takeaways">
+            <div class="tk rv"><span class="n">01</span>
+              <div>Offer <b>recognition</b>, not assessment.</div></div>
+            <div class="tk rv"><span class="n">02</span>
+              <div>Give them an <b>academic reason</b> to talk.</div></div>
+          </div>
         </div>
         <div class="echo rv">
+          <svg class="cast castpair" viewBox="0 0 112 84" aria-hidden="true"><use href="#fig-pair"/></svg>
           <div class="tmeta">The message he can actually send</div>
           <div class="compose"><span class="txt">hey, can you explain question 3?</span></div>
-          <div class="xs" style="margin-top:10px">The cheapest social act we measured.</div>
         </div>
       </div>
-      <div class="credits">
+      <div class="signoff">
         <div class="thanks rv">Thank you<span>Questions welcome</span></div>
-        <div class="roster rv">
-          <div class="r"><b>Azmyeen Nahian</b><i>Title &amp; Rationale</i></div>
-          <div class="r"><b>Tasfia Hasan</b><i>Novelty &amp; Objectives</i></div>
-          <div class="r"><b>Maysha Mahjabin</b><i>Hypotheses</i></div>
-          <div class="r"><b>K.M Mahir Labib</b><i>Methodology</i></div>
-          <div class="r"><b>Khan Abdullah</b><i>Results 1 &amp; 2</i></div>
-          <div class="r"><b>Md. Monjurul Hasan Bhuiyan</b><i>Result 3, Model &amp; Close</i></div>
-        </div>
+        <div class="team rv"><span>Azmyeen Nahian</span>
+          <span>Tasfia Hasan</span>
+          <span>Maysha Mahjabin</span>
+          <span>K.M Mahir Labib</span>
+          <span>Khan Abdullah</span>
+          <span>Md. Monjurul Hasan Bhuiyan</span></div>
       </div>
     </div>
   </section>
@@ -1066,68 +1172,68 @@ window.__SHEET__ = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGB
 "use strict";
 
 var SPEAKERS = [
-  { name:"Azmyeen Nahian",             role:"Title & Rationale",  secs:75 },
-  { name:"Tasfia Hasan",               role:"Novelty & Objectives", secs:72 },
-  { name:"Maysha Mahjabin",            role:"Hypotheses",         secs:50 },
-  { name:"K.M Mahir Labib",            role:"Methodology",        secs:79 },
-  { name:"Khan Abdullah",              role:"Results 1 & 2",      secs:95 },
-  { name:"Md. Monjurul Hasan Bhuiyan", role:"Result 3 & Close",   secs:95 }
+  { name:"Azmyeen Nahian", role:"Title & Rationale", secs:92 },
+  { name:"Tasfia Hasan", role:"Novelty & Objectives", secs:79 },
+  { name:"Maysha Mahjabin", role:"Hypotheses", secs:74 },
+  { name:"K.M Mahir Labib", role:"Methodology", secs:83 },
+  { name:"Khan Abdullah", role:"Results 1 & 2", secs:109 },
+  { name:"Md. Monjurul Hasan Bhuiyan", role:"Result 3 & Close", secs:126 }
 ];
 
 var SLIDES = [
-  { id:"s0",  sp:0, secs:12, sec:"Vignette",   title:"The deleted message" },
-  { id:"s1",  sp:0, secs:10, sec:"Title",      title:"Title" },
-  { id:"s2",  sp:0, secs:20, sec:"Instrument", title:"Which one is you?" },
-  { id:"s3",  sp:0, secs:33, sec:"Rationale",  title:"Rationale" },
-  { id:"s4",  sp:1, secs:24, sec:"Novelty",    title:"What is new here" },
-  { id:"s5",  sp:1, secs:48, sec:"Objectives", title:"Objectives" },
-  { id:"s6",  sp:2, secs:50, sec:"Hypotheses", title:"Three predictions" },
-  { id:"s7",  sp:3, secs:66, sec:"Method",     title:"Methodology" },
-  { id:"s8",  sp:3, secs:13, sec:"The paper",  title:"45 pages", auto:true },
-  { id:"s9",  sp:4, secs:50, sec:"Result 1",   title:"Recognition beats self-rating" },
-  { id:"s10", sp:4, secs:45, sec:"Result 2",   title:"Fear is not a prediction" },
-  { id:"s11", sp:5, secs:30, sec:"Result 3",   title:"The room would not say it" },
-  { id:"s12", sp:5, secs:26, sec:"The model",  title:"Not fooling ourselves" },
-  { id:"s13", sp:5, secs:24, sec:"Discussion", title:"What it means" },
-  { id:"s14", sp:5, secs:15, sec:"Close",      title:"Conclusion" }
+  { id:"s0", sp:0, secs:16, sec:"Vignette", title:"The deleted message" },
+  { id:"s1", sp:0, secs:15, sec:"Title", title:"Title" },
+  { id:"s2", sp:0, secs:24, sec:"Instrument", title:"Which one is you?" },
+  { id:"s3", sp:0, secs:37, sec:"Rationale", title:"Why this topic" },
+  { id:"s4", sp:1, secs:40, sec:"Novelty", title:"What is new here" },
+  { id:"s5", sp:1, secs:39, sec:"Objectives", title:"What we set out to do" },
+  { id:"s6", sp:2, secs:74, sec:"Hypotheses", title:"Three predictions" },
+  { id:"s7", sp:3, secs:70, sec:"Method", title:"Methodology" },
+  { id:"s8", sp:3, secs:13, sec:"The paper", title:"The paper 45 pages", auto:true },
+  { id:"s9", sp:4, secs:57, sec:"Result 1", title:"Result 1" },
+  { id:"s10", sp:4, secs:52, sec:"Result 2", title:"Result 2" },
+  { id:"s11", sp:5, secs:33, sec:"Result 3", title:"Result 3" },
+  { id:"s12", sp:5, secs:31, sec:"The model", title:"The models" },
+  { id:"s13", sp:5, secs:28, sec:"Discussion", title:"What it means" },
+  { id:"s14", sp:5, secs:34, sec:"Close", title:"Conclusion" }
 ];
 
 /* full spoken script — lives here and in SCRIPT.md, never on the slide */
 var SCRIPT = {
-s0:{t:"Look at this for a second.<br><br>Rafi has been in the same section for five weeks. Every day the same three people sit together near the front. He has thought about joining them <em>eleven times</em>. Today he opens his phone, types four words, reads them twice &mdash; and deletes them.",
-  cue:"Let the typing finish. Say NOTHING while it deletes."},
-s1:{t:"That's the story we read to nine students, and it's where this project starts. Our title: how attachment style shapes fear of rejection and friendship formation among BRAC University undergraduates.",
-  cue:"Don't read the names or the numbers &mdash; they're on screen."},
-s2:{t:"Before we tell you anything, do something for me.<br><br>Read these four. Pick the one that sounds most like you. <em>Don't say it out loud</em> &mdash; just hold on to it. In a few minutes we'll tell you what you just did.",
-  cue:"STOP TALKING for ~10s while the bar runs. Do not fill the silence."},
-s3:{t:"We picked this because three of us watched a friend go quiet across a semester, and none of us had a word for it beyond shy.<br><br>Bowlby's idea is that what you learn about closeness at home becomes a running assumption about whether people will show up for you. That assumption doesn't stay at home. It shows up in who types a message and deletes it.<br><br>And here it's sharper: open credit dissolves the cohort every semester, so friendships have to be rebuilt again and again. <em>Sixteen per cent of the students we surveyed had no close friend at all.</em> Seventy-one per cent wouldn't talk to us in person.<br><br>Tasfia.",
-  cue:"Hand off. → Tasfia."},
-s4:{t:"I want to be clear about what this project is, because it isn't a literature review.<br><br>The data is <em>ours</em>. We built the survey, we ran it, 103 students answered it in three days in August, and we ran the focus group ourselves.<br><br>The instrument is new. We took six real situations and asked about each one twice &mdash; how anxious would you feel, and how well do you think it would go. The standard measure multiplies those two together and never checks whether they're related. Separating them is what let us test our third prediction at all.<br><br>And the comparison is new. A paragraph you point at, against a rating scale, in the same students on the same afternoon. The field settled this by argument. <em>We could not find a study that actually ran it.</em>",
-  cue:"This is the novelty slide. Say 'we could not find a study that ran it' slowly."},
-s5:{t:"Three objectives.<br><br>First, to describe how students of each style <em>talk</em> about approaching people and being turned down &mdash; not how they score, how they speak. That's why we used both a survey and a discussion.<br><br>Second, to test whether the fears sitting between someone's style and their actual behaviour are the ones they report.<br><br>Third, to compare the three insecure patterns against each other, instead of lumping them into one group the way most studies do.<br><br>So we measured attachment style, fear of judgement and loneliness &mdash; and against those, real behaviour: how many close friends, how many conversations actually started, which situations get avoided.<br><br>Maysha.",
-  cue:"→ Maysha."},
-s6:{t:"We wrote down three predictions before we looked at any data.<br><br>First: insecure students would feel lonelier and have fewer close friends.<br><br>Second: our rating scales would predict those same things.<br><br>Third: how anxious someone felt about approaching a person would track how badly they expected it to go.<br><br>Here's what happened. <em>The first one held, strongly.</em> The second didn't. The third didn't.<br><br>And I want to be honest &mdash; that isn't an apology. The two places this broke are exactly where our finding is. Most of the rest of this talk is about those two failures.<br><br>Mahir.",
-  cue:"Let the two red cards land before the last line. → Mahir."},
-s7:{t:"We asked the same question twice &mdash; once with numbers, once with talk.<br><br>104 responses in August. We threw one out where every answer was impossible, including an age of a hundred million. That leaves 103.<br><br>One honest change of plan. We'd promised sixteen interviews and three focus groups. We ran one group and added a survey, because 73 of our 103 respondents refused any follow-up contact. <em>That refusal stopped being a problem and became a finding.</em><br><br>Everyone read four paragraphs and picked one, then answered rating scales. And the six situations were each rated twice &mdash; that double rating is what makes our second result possible.<br><br>In the room we never said the words anxious or avoidant. Label someone and they perform the label. Consent was written, names became pseudonyms, and everyone left with the counselling centre's card.",
-  cue:"Point at the footage on 'in the room'. Then advance — the book covers your handoff."},
-s8:{t:"<em>[No speech needed. This runs while Abdullah comes up.]</em><br><br>If you want a line: all of it is written up &mdash; forty-five pages, eight appendices, and a fixed seed, so anyone can re-run our code and get the same numbers.",
-  cue:"Auto-advances. Abdullah takes over here."},
-s9:{t:"Quick bet before I show you this.<br><br>Which do you think tells us more about how many close friends a student actually has &mdash; <em>a paragraph they point at</em>, or two proper rating scales?",
-  cue:"PAUSE. Press → to reveal, then continue below."},
-s9b:{t:"The paragraph. And it isn't close.<br><br>Here's the honest test. We hide one student, build the model on the other 102, and try to guess the hidden one. Then we do that for every student.<br><br>When we guess with the scales, we do <em>worse than if we'd just said 'average'</em> &mdash; that's what the bar below the line means. The paragraph gets it right.<br><br>Look at the last row though. It flips. The scales are better at guessing what someone <em>says they feel</em>. The paragraph is better at guessing what their life actually <em>looks like</em>.<br><br>And that thing you did a few minutes ago, picking a paragraph? <em>That's the measure that won.</em>",
-  cue:"The callback is the payoff for the whole opening. Land it, then pause."},
-s10:{t:"Second result &mdash; and this one's a trick of perspective.<br><br>Same two questions, same students, same six situations. Change only what you compare, and the answer flips.<br><br>Compare <em>situations</em> &mdash; six dots &mdash; and it's a clean line. The things the room was most scared of were the things it expected to go worst. The cheapest thing you can do here is ask a classmate to explain something. The most expensive is suggest lunch.",
-  cue:"Press → to switch to students."},
-s10b:{t:"But compare <em>students</em>, inside any one of those situations, and it vanishes. Knowing how scared someone felt tells you nothing about how well they expected it to go. All six bars sit on zero.<br><br>Situations line up. <em>Students don't.</em><br><br>That matters, because the standard way of measuring rejection sensitivity multiplies those two things together &mdash; and never checks whether they're related. In our data, they aren't.<br><br>Monjurul.",
-  cue:"→ Monjurul."},
-s11:{t:"Our third result is the one we didn't expect, and it's about our own questions.<br><br>We wrote questions designed to pull out a personal story &mdash; who's been Rafi this semester, tell us about a time. Those got a real personal answer <em>three times out of forty-five</em>.<br><br>The questions that asked for nothing like that got one nine times out of twenty-six. Five times the rate.<br><br>The harder we asked, the less people told us. And it wasn't one or two shy people &mdash; it didn't vary by speaker. It's the room.<br><br>Look at where the answers went. Only seventeen per cent were something that actually happened to them. Nearly half were about people in general.<br><br>The clearest thing anyone said in sixty minutes was four words long &mdash; and it was about the character: <em>I have been Rafi.</em>",
-  cue:"Pause after the quote. Don't explain it."},
-s12:{t:"Everything you have seen came out of a model, so here they are.<br><br>Top left is the comparison itself. The four groups, and how many close friends each one actually has. Secure students hold four and a half. Fearful students hold under two.<br><br>Beside it is every test we ran and the question it answers. A MANOVA to ask whether the four groups differ at all. Games and Howell to ask which ones. A cross-validated regression to ask paragraph or scales. Fisher's exact for the disclosure gap. And k-means, to check whether the scales find the same four groups the students picked. <em>They do not, and that is the point.</em><br><br>Underneath, two of those are running live. On the left we hide one student and guess them from the other 102, over and over. On the right we reshuffle who opened up, a thousand times, to see whether chance could produce our result. About six times in a thousand, it can.",
-  cue:"Point, don't read. The k-means line is the strongest one here."},
-s13:{t:"So why does a paragraph beat a scale?<br><br>Because people judge themselves against a whole picture, not a checklist. A paragraph holds the motivation and the feeling and the behaviour together &mdash; six separate questions pull them apart and lose something.<br><br>And the scales missed because people who avoid closeness often don't know they do it. They under-rate themselves on exactly the questions meant to catch them.<br><br>Our limits, honestly: half our sample was from one department, more men than women, one focus group of nine, one moment in time &mdash; so we can't claim causes &mdash; and our tests can't rule out small effects.<br><br>What I learned: we thought a well-built question extracts an answer. <em>The opposite happened.</em> And we assumed our job was to find the anxious students. The ones who worried us by the end reported the least distress and the fewest friends.",
-  cue:"Slow down on the last sentence."},
-s14:{t:"To close.<br><br>Among these 103 students, the paragraph someone recognised themselves in predicted their friendships. Two validated scales did not.<br><br>So: offer people <em>recognition rather than assessment</em> &mdash; descriptions to see themselves in, not scales to score themselves on. And give students an academic reason to talk, because asking for help with coursework was the cheapest social act we measured and suggesting lunch was the most expensive.<br><br>Study partners, help desks, rotating seating. Students will take an academic reason to talk long before a social one.<br><br>Thank you &mdash; happy to take questions.",
-  cue:"Stop. Add nothing after 'questions'."}
+s0:{t:"Five weeks into the semester. Same room, same three people at the front.<br>Rafi has thought about sitting with them eleven times.<br>Tonight he types four words, reads them twice, and deletes them.",
+  cue:"Walk on and start inside the story. No “good afternoon” yet, no “today we will be presenting our project on”. The typing animation is already running behind you. Deliver these three lines slower than feels natural. <strong>Say nothing while the four words delete.</strong> Two full seconds of silence. That pause is the whole opening; talking over it kills the talk before it starts."},
+s1:{t:"Good afternoon. We read that paragraph out loud to nine BRAC students, and every one of them knew who Rafi was.<br>Group 02, Section 11. Our question: how attachment style shapes fear of rejection and friendship formation here.",
+  cue:"Do not read the six names or the three numbers off the slide. The audience reads faster than you speak."},
+s2:{t:"Before any numbers, I need thirty seconds from you.<br>Read these four paragraphs. Pick the one that sounds most like you, and keep it to yourself.<br><br><em>[ ten seconds of silence &mdash; say nothing ]</em><br><br>Hold on to that. Abdullah comes back to it.",
+  cue:"<strong>Now stop for ten seconds.</strong> Watch the bar, not the room. Do not fill it, do not explain, do not say “take your time”. This is the single most important pause in the talk, and it is the setup for Abdullah's payoff at 5:28."},
+s3:{t:"Three of us watched a friend go quiet across one semester. The only word we had was shy, and shy explains nothing.<br>Bowlby gave psychology a better one. The internal working model: what you learn early about whether people show up, and then carry into every room after that.<br>Here, open credit dissolves your section every four months, so you rebuild your circle from zero.<br>Every dot on this screen is one student we surveyed. Sixteen have no close friend at all. Seventy-one per cent would not meet us in person.<br>Tasfia.",
+  cue:"Slow on “sixteen have no close friend at all”. Let it sit before the seventy-one per cent. Then say Tasfia's name and step back."},
+s4:{t:"That refusal rate is why this is not a literature review. Nobody had written down what BRAC students do.<br>So everything on this slide is ours. The data: 103 students, our questionnaire, three days in August, and a focus group we ran ourselves.<br>The instrument: six campus situations, each rated twice. How nervous would this make you, and how well would it actually go. The standard measure multiplies those two into one score. We kept them apart.<br>The comparison: a paragraph against a rating scale, same students, same afternoon. We went looking for a study that had run it. There isn't one.",
+  cue:"This is the slide that earns the marks. Land “there isn't one” slowly, then stop for a beat. Expect a question on it; the answer is at the back of this script."},
+s5:{t:"Three things we set out to do.<br>First, how students of each style talk about being turned down. Not their score, their words. That is why we ran a discussion as well as a survey.<br>Second, whether the fears people report are the ones that actually change what they do.<br>Third, keep the three insecure styles apart. Most studies bundle them into one bucket called insecure, and that bucket hides the group that mattered most.<br>So we measured what students feel against what they do: close friends held, conversations started, situations avoided.<br>Maysha.",
+  cue:"Point at the two icon tiles on “what they feel” and “what they do”. The entire talk is that one comparison, so make the room see it here."},
+s6:{t:"Who answered? 103 students, average age twenty-two, sixty-two men, thirty-nine women, across ten departments. One in three came out secure. Two in three did not.<br>We wrote three predictions before we opened the data. That order matters, because any dataset will agree with you if you decide what you believe afterwards.<br>One. Insecure students would feel lonelier and hold fewer close friends.<br>Two. Our rating scales would predict that same loneliness and those same friendships.<br>Three. How nervous somebody felt about approaching a person would track how badly they expected it to go.<br><br><em>[ press &rarr; &mdash; let the three cards resolve ]</em><br><br>One held, and it held hard. Secure students hold four and a half close friends. Fearful students hold under two. Less than half, and the odds of a gap that size by chance are under one in a thousand.<br>Two did not hold. Three did not hold.<br>I am not apologising for that. We predicted the ordinary thing and the data handed us a better one. Those two red cards are where the rest of this talk lives.<br>Mahir.",
+  cue:"Press → and let the three cards resolve one at a time. Say nothing while the two red ones turn over. Say “I am not apologising for that” straight at the audience, not at the screen. It is the line that turns two failed hypotheses into a finding."},
+s7:{t:"We asked the same question twice. Once with numbers, once with people talking.<br>104 students answered. We threw one out where every answer was impossible, including an age of a hundred million.<br>Now an honest confession. Our proposal promised sixteen interviews and three focus groups. We ran one group of nine and built a survey instead, because 73 of our 103 respondents ticked no thank you to any follow-up. Seven in ten would fill in a form. Not one of them would sit in a room with us.<br>So that stopped being a recruitment problem. On this campus, the topic itself is what people avoid.<br>Everyone picked a paragraph, answered scales for attachment, fear of judgement and loneliness, then rated six situations twice. That double rating is what makes Abdullah's second result possible.<br>In that room we never once said the words anxious or avoidant. Name someone's label and they perform it. Consent was written, names became pseudonyms, and the footage is blurred and silent because our consent covered audio, never faces.",
+  cue:"Gesture at the video on “in that room”. If anyone asks later, the one-line answer is: consent covered audio only, so we blurred and muted it."},
+s8:{t:"All of it is written up. Forty-five pages: the four styles compared separately instead of lumped together, every situation rated twice, and three results — two of which are the nulls we kept.<br>Abdullah.",
+  cue:"The book speed-flips all 45 pages by itself and shuts on the cover. Say this while Abdullah walks up."},
+s9:{t:"Quick bet. No wrong answer, I just want your instinct.<br>To guess how many close friends a student has, what would you use? The paragraph they pointed at, or two published, validated rating scales.",
+  cue:"<strong>Pause and let the room actually pick.</strong> Then press → to reveal. If you forget, it reveals itself after nine seconds."},
+s9b:{t:"The paragraph. And it is not close.<br>Here is the honest test. Hide one student, build the model on the other 102, then guess the one we hid. 103 times.<br>The dark line is what you'd score by just guessing the average student. Below it is worse than that. The scales are below it. The paragraph is above it, on both.<br>On a feeling, fear of being judged, the scales win. Scales know what you feel. The paragraph knows what your life looks like.<br>And the paragraph you picked four minutes ago is the one that beat them.",
+  cue:"That last line is the payoff for Azmyeen's opening. Land it, then stop for a beat and let the room realise they were the participants."},
+s10:{t:"Second result. Same students, same six situations, same two questions. I change one thing, what we compare, and the answer reverses.<br>Compare situations. Six dots. Clean line. What the room feared most is what it expected to go worst. Cheapest thing on this campus: ask a classmate to explain something. Most expensive: suggest lunch.",
+  cue:"Press → (or tap the toggle) to switch from situations to students."},
+s10b:{t:"Now compare students inside one situation. Gone. All six bars sit on zero. How frightened a student is tells you nothing about how well they think it will go.<br>Statisticians call that an ecological fallacy: true of groups, false of the people inside them.<br>And the standard rejection-sensitivity score multiplies fear by expectation as if they were one thing. Ours says they are not.<br>Monjurul.",
+  cue:""},
+s11:{t:"Our third result is about us, not about them.<br>We wrote sharp questions. Who has been Rafi this semester. Tell us about a time. Those got a real answer three times out of forty-five. The questions that asked for nothing got nine out of twenty-six. Five times the rate.<br>The harder we pushed, the less people told us.<br>The most honest sentence in sixty minutes was four words long, and it was about a fictional character. I have been Rafi.",
+  cue:"Stop after the quote. Do not explain it. Two seconds, then move on."},
+s12:{t:"Every claim here has a model under it, and they are all on this slide. The row I would frame is the last one.<br>We let a computer sort all 103 students into four groups using only the scale scores, with the labels hidden. Then we asked how well its groups matched the paragraphs students picked for themselves. Agreement, point zero three. Zero is random.<br>The scales cannot find the groups that students find in themselves.",
+  cue:"Point at the rows, do not read the table out. The two simulations underneath run by themselves."},
+s13:{t:"Why does a paragraph beat a professional scale? Because people match themselves against a whole picture, and six separate items pull that picture apart. And someone who avoids closeness usually doesn't know they do it, so they mark themselves low on the exact item built to catch them.<br>Our limits: half the sample from one department, one focus group of nine, one afternoon, so no causal claims.",
+  cue:""},
+s14:{t:"One line to take out of this room. The paragraph a student recognised themselves in predicted their friendships. Two validated scales did not.<br>So stop scoring students. Give them descriptions to recognise, and give them an academic reason to talk. Study partners, help desks, seating that rotates. Asking for help with coursework was the cheapest social act we measured. Suggesting lunch was the most expensive.<br>Rafi never needed a counsellor. He needed an excuse. Hey, can you explain question three?<br>Thank you.",
+  cue:"Stop. Add nothing after “thank you”. No “and that concludes our presentation”. Stand still and wait for the first question."}
 };
 
 var BIDS = [
@@ -1154,8 +1260,21 @@ function css(v){
 
 /* ---------- scale to fit ---------- */
 var stage = $("#stage");
-function fit(){ stage.style.transform = "scale("+Math.min(innerWidth/1280, innerHeight/720)+")"; }
+function stageScale(){ return Math.min(innerWidth/1280, innerHeight/720); }
+function fit(){ stage.style.transform = "scale("+stageScale()+")"; }
 addEventListener("resize", fit); fit();
+
+/* Canvases are laid out in the 1280x720 design space and then scaled to the
+   projector with the rest of the stage, so a 1:1 backing store gets upscaled
+   and goes soft. Draw them at the resolution they are actually shown at. */
+function renderRatio(){ return Math.min(4, (window.devicePixelRatio||1) * stageScale()); }
+function fitCanvas(cv, DW, DH){
+  var R = renderRatio();
+  cv.width = Math.round(DW*R); cv.height = Math.round(DH*R);
+  var x = cv.getContext("2d");
+  x.setTransform(R,0,0,R,0,0);   /* keep drawing in design units */
+  return x;
+}
 
 /* ---------- speaker rail ---------- */
 var total = 0; SPEAKERS.forEach(function(s){ total += s.secs; });
@@ -1260,7 +1379,8 @@ function audioSection(k){ if (AC && audioOn) chordIx = k % CHORDS.length; }
    ============================================================ */
 function baseOpts(){
   return {
-    responsive:false, animation:{ duration:1100, easing:"easeOutQuart" },
+    responsive:false, devicePixelRatio:renderRatio(),
+    animation:{ duration:1100, easing:"easeOutQuart" },
     plugins:{ legend:{ display:false }, tooltip:{ enabled:false } },
     layout:{ padding:{ top:16, right:12, bottom:4, left:4 } }
   };
@@ -1486,8 +1606,14 @@ function typePlay(){
   }
   function del(){
     out.textContent = MSG.slice(0,--i);
-    if (i>0) tT=setTimeout(del,26);
-    else { ph.style.display=""; tT=setTimeout(function(){ box.classList.add("hot"); },420); }
+    if (i>0){ tT=setTimeout(del,26); return; }
+    ph.style.display="";
+    /* the counter never moves — nothing was ever sent — and then he tries again.
+       It loops for as long as the slide is up: type, cut, type again. */
+    tT = setTimeout(function(){
+      box.classList.add("hot");
+      tT = setTimeout(inn, 1100);
+    }, 420);
   }
   tT = setTimeout(inn, 460);
 }
@@ -1630,8 +1756,9 @@ function simLoop(){
 
 /* A · hide one student, guess them from the rest, 103 times */
 function simHideOne(){
-  var cv=$("#simA"); if(!cv) return; var x=cv.getContext("2d");
-  var W=cv.width, H=cv.height, COLS=21, R=5.0, GX=12, GY=40, SPX=12.6, SPY=12.6;
+  var cv=$("#simA"); if(!cv) return;
+  var W=524, H=200, x=fitCanvas(cv, W, H);
+  var COLS=21, R=5.0, GX=12, GY=40, SPX=12.6, SPY=12.6;
   var N=103, i=0, held=-1, phase=0, tick=0;
   var scoreS=0, scoreP=0;                       /* running scores, converge to -.06 / +.13 */
   function pos(k){ return { x:GX+(k%COLS)*SPX, y:GY+Math.floor(k/COLS)*SPY }; }
@@ -1701,8 +1828,8 @@ function simHideOne(){
 
 /* B · reshuffle who opened up, 1000 times, and see how rarely chance matches us */
 function simShuffle(){
-  var cv=$("#simB"); if(!cv) return; var x=cv.getContext("2d");
-  var W=cv.width, H=cv.height;
+  var cv=$("#simB"); if(!cv) return;
+  var W=524, H=200, x=fitCanvas(cv, W, H);
   var NA=45, NB=26, NOPEN=12, OBS=34.6-6.7;      /* observed gap, percentage points */
   var bins=new Array(30).fill(0), runs=0, extreme=0, lastGap=0, flash=0;
   var BL=30, BR=W-16, BT=64, BB=H-34;
