@@ -21,7 +21,7 @@ The slides carry almost no text on purpose — **you** carry the words. Press **
 | 09 | Result 1 | Khan Abdullah | 50s | 4:32 |
 | 10 | Result 2 | Khan Abdullah | 45s | 5:22 |
 | 11 | Result 3 | Md. Monjurul Hasan Bhuiyan | 30s | 6:07 |
-| 12 | The model | Md. Monjurul Hasan Bhuiyan | 26s | 6:37 |
+| 12 | The models | Md. Monjurul Hasan Bhuiyan | 26s | 6:37 |
 | 13 | Discussion | Md. Monjurul Hasan Bhuiyan | 24s | 7:03 |
 | 14 | Close | Md. Monjurul Hasan Bhuiyan | 15s | 7:27 |
 
@@ -203,17 +203,17 @@ If you want a line:
 
 **Cue:** Pause after the quote. Don't explain it.
 
-### 12 · The model
+### 12 · The models
 
-> Two bits of maths, and I'll say what they mean rather than read them.
+> Everything you have seen came out of a model, so here they are.
 >
-> The one on the left is the hide-one-student test. Guess a student the model has never seen, using everyone else. A number below zero doesn't mean a weak result — it means *worse than just saying the average*. That's where the scales land. The gap between the two is point one eight, and we're ninety-five per cent confident it's real.
+> Top left is the comparison itself. The four groups, and how many close friends each one actually has. Secure students hold four and a half. Fearful students hold under two.
 >
-> The one on the right is Fisher's exact test. When you've only got three answers in one box, the usual test isn't trustworthy, so this one counts every possible arrangement directly. The chance our disclosure result is a fluke is about *six in a thousand*.
+> Beside it is every test we ran and the question it answers. A MANOVA to ask whether the four groups differ at all. Games and Howell to ask which ones. A cross-validated regression to ask paragraph or scales. Fisher's exact for the disclosure gap. And k-means, to check whether the scales find the same four groups the students picked. *They do not, and that is the point.*
 >
-> All of it ran in Python with a fixed seed, so anyone can reproduce every number.
+> Underneath, two of those are running live. On the left we hide one student and guess them from the other 102, over and over. On the right we reshuffle who opened up, a thousand times, to see whether chance could produce our result. About six times in a thousand, it can.
 
-**Cue:** Do **not** read the formulas aloud. Point at the negative number.
+**Cue:** Point, don't read. The k-means line is the strongest one here: the scales do not recover the groups students recognise in themselves.
 
 ### 13 · Discussion
 
