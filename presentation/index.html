@@ -367,6 +367,19 @@ table.rt tr.mute td{color:var(--on-surface-mut)}
 #bookfacts .f .v{font-family:var(--display);font-size:34px;font-weight:600;line-height:1;
   letter-spacing:-.03em;color:var(--primary)}
 #bookfacts .f .k{font-size:11.5px;color:var(--on-surface-var);margin-top:5px;line-height:1.35}
+/* ---- slide 08 · archived-paper QR, bottom-right corner ---------------- */
+#doiqr{position:absolute;right:26px;bottom:52px;z-index:4;display:flex;align-items:center;
+  gap:13px;padding:11px 15px 11px 11px;border-radius:var(--r-lg);text-decoration:none;
+  background:var(--surface-1);box-shadow:var(--lip),var(--e1);
+  opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s ease}
+#doiqr.on{opacity:1;transform:none}
+#doiqr .qr{display:block;width:74px;height:74px;padding:5px;border-radius:7px;background:#fff}
+#doiqr .qrimg{display:block;width:100%;height:100%}
+#doiqr .cap{font-family:var(--mono);font-size:11px;line-height:1.45;color:var(--on-surface-var);
+  white-space:nowrap}
+#doiqr .cap b{display:block;font-family:var(--display);font-size:14px;font-weight:600;
+  letter-spacing:-.01em;color:var(--on-surface);margin-bottom:3px}
+
 #pgcount{position:absolute;right:56px;top:14px;font-family:var(--mono);font-size:14px;
   font-weight:600;color:var(--primary)}
 
@@ -979,6 +992,10 @@ table.models td.r u{display:block;text-decoration:none;font-family:var(--sans);f
         <div class="f"><div class="v">6</div><div class="k">situations, each rated twice</div></div>
         <div class="f"><div class="v">3</div><div class="k">results &mdash; two of them nulls</div></div>
       </div>
+      <a id="doiqr" href="https://doi.org/10.5281/zenodo.22118219" target="_blank" rel="noopener">
+        <span class="qr"><svg class="qrimg" viewBox="0 0 33 33" shape-rendering="crispEdges" aria-hidden="true"><path fill="#1B1A18" d="M0 0h7v1h-7zM9 0h1v1h-1zM11 0h2v1h-2zM14 0h1v1h-1zM16 0h2v1h-2zM19 0h1v1h-1zM21 0h3v1h-3zM26 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM8 1h5v1h-5zM14 1h2v1h-2zM18 1h1v1h-1zM20 1h1v1h-1zM23 1h2v1h-2zM26 1h1v1h-1zM32 1h1v1h-1zM0 2h1v1h-1zM2 2h3v1h-3zM6 2h1v1h-1zM8 2h1v1h-1zM11 2h2v1h-2zM14 2h4v1h-4zM23 2h2v1h-2zM26 2h1v1h-1zM28 2h3v1h-3zM32 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM6 3h1v1h-1zM9 3h1v1h-1zM12 3h4v1h-4zM20 3h1v1h-1zM23 3h1v1h-1zM26 3h1v1h-1zM28 3h3v1h-3zM32 3h1v1h-1zM0 4h1v1h-1zM2 4h3v1h-3zM6 4h1v1h-1zM9 4h2v1h-2zM12 4h2v1h-2zM20 4h1v1h-1zM22 4h1v1h-1zM26 4h1v1h-1zM28 4h3v1h-3zM32 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM9 5h3v1h-3zM14 5h2v1h-2zM19 5h6v1h-6zM26 5h1v1h-1zM32 5h1v1h-1zM0 6h7v1h-7zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM24 6h1v1h-1zM26 6h7v1h-7zM12 7h2v1h-2zM15 7h1v1h-1zM17 7h1v1h-1zM20 7h1v1h-1zM23 7h2v1h-2zM1 8h3v1h-3zM5 8h2v1h-2zM12 8h1v1h-1zM17 8h1v1h-1zM19 8h3v1h-3zM30 8h2v1h-2zM0 9h1v1h-1zM2 9h1v1h-1zM7 9h3v1h-3zM11 9h3v1h-3zM16 9h1v1h-1zM19 9h1v1h-1zM21 9h1v1h-1zM23 9h1v1h-1zM26 9h2v1h-2zM29 9h2v1h-2zM32 9h1v1h-1zM0 10h1v1h-1zM5 10h3v1h-3zM11 10h1v1h-1zM15 10h1v1h-1zM17 10h1v1h-1zM23 10h1v1h-1zM26 10h4v1h-4zM31 10h2v1h-2zM2 11h1v1h-1zM4 11h2v1h-2zM7 11h3v1h-3zM15 11h1v1h-1zM18 11h3v1h-3zM22 11h4v1h-4zM27 11h1v1h-1zM29 11h1v1h-1zM31 11h2v1h-2zM0 12h7v1h-7zM10 12h2v1h-2zM14 12h3v1h-3zM18 12h1v1h-1zM21 12h1v1h-1zM23 12h2v1h-2zM27 12h3v1h-3zM32 12h1v1h-1zM1 13h2v1h-2zM4 13h1v1h-1zM7 13h2v1h-2zM10 13h2v1h-2zM13 13h1v1h-1zM16 13h1v1h-1zM18 13h1v1h-1zM26 13h1v1h-1zM31 13h1v1h-1zM0 14h2v1h-2zM5 14h4v1h-4zM12 14h1v1h-1zM15 14h1v1h-1zM17 14h1v1h-1zM21 14h1v1h-1zM23 14h2v1h-2zM26 14h2v1h-2zM29 14h1v1h-1zM2 15h1v1h-1zM4 15h1v1h-1zM7 15h2v1h-2zM10 15h2v1h-2zM13 15h4v1h-4zM18 15h9v1h-9zM28 15h3v1h-3zM1 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM8 16h3v1h-3zM12 16h4v1h-4zM18 16h2v1h-2zM21 16h1v1h-1zM25 16h2v1h-2zM28 16h3v1h-3zM0 17h5v1h-5zM8 17h3v1h-3zM14 17h2v1h-2zM18 17h1v1h-1zM21 17h3v1h-3zM25 17h2v1h-2zM28 17h2v1h-2zM32 17h1v1h-1zM0 18h4v1h-4zM6 18h1v1h-1zM12 18h1v1h-1zM14 18h1v1h-1zM17 18h1v1h-1zM22 18h1v1h-1zM25 18h4v1h-4zM30 18h2v1h-2zM1 19h5v1h-5zM8 19h2v1h-2zM11 19h2v1h-2zM16 19h4v1h-4zM21 19h1v1h-1zM23 19h1v1h-1zM25 19h2v1h-2zM28 19h1v1h-1zM31 19h1v1h-1zM2 20h1v1h-1zM5 20h2v1h-2zM10 20h2v1h-2zM13 20h3v1h-3zM17 20h2v1h-2zM20 20h1v1h-1zM23 20h2v1h-2zM29 20h2v1h-2zM32 20h1v1h-1zM0 21h1v1h-1zM3 21h1v1h-1zM5 21h1v1h-1zM7 21h2v1h-2zM11 21h1v1h-1zM13 21h1v1h-1zM15 21h1v1h-1zM17 21h2v1h-2zM24 21h1v1h-1zM29 21h1v1h-1zM32 21h1v1h-1zM2 22h3v1h-3zM6 22h2v1h-2zM10 22h1v1h-1zM12 22h1v1h-1zM15 22h1v1h-1zM21 22h3v1h-3zM25 22h2v1h-2zM29 22h4v1h-4zM1 23h1v1h-1zM8 23h1v1h-1zM10 23h1v1h-1zM12 23h2v1h-2zM16 23h2v1h-2zM19 23h1v1h-1zM24 23h2v1h-2zM27 23h3v1h-3zM31 23h2v1h-2zM0 24h1v1h-1zM2 24h6v1h-6zM9 24h1v1h-1zM11 24h1v1h-1zM13 24h1v1h-1zM15 24h4v1h-4zM24 24h5v1h-5zM31 24h2v1h-2zM8 25h2v1h-2zM11 25h1v1h-1zM13 25h1v1h-1zM16 25h1v1h-1zM19 25h2v1h-2zM22 25h3v1h-3zM28 25h2v1h-2zM0 26h7v1h-7zM9 26h2v1h-2zM12 26h1v1h-1zM19 26h1v1h-1zM22 26h3v1h-3zM26 26h1v1h-1zM28 26h1v1h-1zM31 26h1v1h-1zM0 27h1v1h-1zM6 27h1v1h-1zM8 27h1v1h-1zM10 27h1v1h-1zM12 27h2v1h-2zM18 27h1v1h-1zM21 27h4v1h-4zM28 27h4v1h-4zM0 28h1v1h-1zM2 28h3v1h-3zM6 28h1v1h-1zM9 28h1v1h-1zM11 28h1v1h-1zM13 28h1v1h-1zM15 28h2v1h-2zM20 28h1v1h-1zM23 28h6v1h-6zM30 28h1v1h-1zM32 28h1v1h-1zM0 29h1v1h-1zM2 29h3v1h-3zM6 29h1v1h-1zM8 29h1v1h-1zM10 29h1v1h-1zM14 29h2v1h-2zM19 29h2v1h-2zM23 29h2v1h-2zM27 29h1v1h-1zM29 29h2v1h-2zM0 30h1v1h-1zM2 30h3v1h-3zM6 30h1v1h-1zM8 30h1v1h-1zM10 30h1v1h-1zM12 30h3v1h-3zM16 30h1v1h-1zM18 30h2v1h-2zM21 30h1v1h-1zM23 30h1v1h-1zM26 30h2v1h-2zM29 30h1v1h-1zM0 31h1v1h-1zM6 31h1v1h-1zM8 31h4v1h-4zM13 31h1v1h-1zM15 31h2v1h-2zM18 31h2v1h-2zM22 31h2v1h-2zM26 31h3v1h-3zM32 31h1v1h-1zM0 32h7v1h-7zM9 32h1v1h-1zM12 32h3v1h-3zM17 32h2v1h-2zM20 32h3v1h-3zM25 32h2v1h-2zM28 32h1v1h-1zM30 32h1v1h-1z"/></svg></span>
+        <span class="cap"><b>Read the paper</b>doi.org/10.5281/<br>zenodo.22118219</span>
+      </a>
     </div>
   </section>
 
@@ -1273,8 +1290,10 @@ s0:{t:"Five weeks in. Same room, same three people at the front.<br>Rafi has tho
   cue:"Walk on and start inside the story. No “good afternoon” yet. The typing animation is already running behind you. Say these three lines slower than feels natural — this is the one place where being slow is the whole point. <strong>Say nothing while the four words delete.</strong> Two full seconds of silence. Talking over it kills the talk before it starts."},
 s1:{t:"Good afternoon. We read that to nine BRAC students. All nine knew who Rafi was.<br>Group 02, Section 11. Our question: how attachment style shapes fear of rejection and friendship.",
   cue:"Do not read the six names or the three numbers off the slide. The audience reads faster than you speak."},
-s2:{t:"I need thirty seconds from you. Read these four paragraphs. Pick the one that sounds most like you. Keep it to yourself.<br><br><em>[ ten seconds of silence &mdash; say nothing ]</em><br><br>Hold on to that. Abdullah comes back to it.",
-  cue:"<strong>Now stop for ten seconds.</strong> Watch the bar, not the room. Do not fill it, do not explain, do not say “take your time”. Ten seconds of silence feels like a minute when you are nervous. Trust the bar."},
+s2:{t:"I need thirty seconds from you. Read these four paragraphs. Pick the one that sounds most like you. Keep it to yourself.<br><br><em>[ ten seconds of silence &mdash; say nothing ]</em>",
+  cue:"<strong>Now stop for ten seconds.</strong> Watch the bar, not the room. Do not fill it, do not explain, do not say “take your time”. Ten seconds of silence feels like a minute when you are nervous. Trust the bar. When it fills, press &rarr; to put the four percentages up."},
+s2b:{t:"Hold on to that. Abdullah comes back to it.",
+  cue:"The split is on screen now &mdash; 32 / 11 / 31 / 26. Do not read the numbers out. Say your one line and go. If you forget to press &rarr;, it reveals itself when the bar fills."},
 s3:{t:"Three of us watched a friend go quiet last semester. The only word we had was shy. Shy explains nothing.<br>Bowlby gave us a better word. What you learn early about whether people show up, you carry into every room after.<br>Here, open credit breaks your section up every four months. You rebuild from zero.<br>Tasfia.",
   cue:"Four sentences, four breaths. Stop after “Shy explains nothing.” Then say Tasfia's name and step back."},
 s4:{t:"Nobody had written down what BRAC students do. Everything here is ours.<br>The data: 103 students, our own survey, our own focus group.<br>The instrument: six campus situations, rated twice. How nervous would this make you, and how well would it go. The standard measure multiplies those two. We kept them apart.<br>The comparison: a paragraph against a rating scale, same students, same afternoon. We looked for a study that had run it. There isn't one.",
@@ -1776,10 +1795,12 @@ function bookPlay(){
   buildBook();
   clearTimeout(bookSeq);
   var wrap=$("#bookwrap"), facts=$("#bookfacts");
-  if (STILL){ try{ flip.turnToPage(0); }catch(e){}
+  if (STILL){ try{ flip.turnToPage(0); }catch(e){} $("#doiqr").classList.add("on");
     wrap.classList.add("flat"); facts.classList.add("on");
     $("#pgcount").textContent = "45 pp."; return; }
   wrap.classList.remove("flat"); facts.classList.remove("on");
+  $("#doiqr").classList.remove("on");
+  ST(function(){ $("#doiqr").classList.add("on"); }, 700);
   $("#pgcount").textContent = "p. 1";
   try { flip.turnToPage(0); } catch(e){}
 
@@ -1975,6 +1996,7 @@ var slideT = [];
 function ST(fn, ms){ var h = setTimeout(fn, ms); slideT.push(h); return h; }
 function clearSlideT(){ for (var k=0;k<slideT.length;k++) clearTimeout(slideT[k]); slideT.length=0; }
 var betShown=false, betFallback=null, unitMode="sit";
+var protoShown=false, protoFallback=null;
 function enter(id){
   clearSlideT();
   var slide = $("#"+id);
@@ -2002,6 +2024,14 @@ function enter(id){
     var bar=$("#readbar i"); bar.style.transition="none"; bar.style.width="0%";
     void bar.offsetWidth;
     ST(function(){ bar.style.transition="width 10s linear"; bar.style.width="100%"; }, 820);
+    protoShown=false;
+    $$(".proto", slide).forEach(function(p){ p.classList.remove("reveal"); });
+    clearTimeout(protoFallback);
+    /* the ten seconds of silence end when the bar fills; show the split then
+       even if the speaker forgets to press right */
+    protoFallback = setTimeout(function(){
+      if(!protoShown && SLIDES[cur].id==="s2") step("s2");
+    }, 11200);
   }
 
   if (id==="s6"){
@@ -2060,6 +2090,14 @@ function setUnit(mode){
 
 /* sub-steps: returns true when the keypress was consumed by the slide */
 function step(id){
+  if (id==="s2" && !protoShown){
+    protoShown = true;
+    $$(".proto", $("#s2")).forEach(function(p,k){
+      ST(function(){ p.classList.add("reveal"); }, k*120);
+    });
+    notes();
+    return true;
+  }
   if (id==="s9" && !betShown){
     betShown = true;
     $("#betA").classList.add("win"); $("#betB").classList.add("lose");
@@ -2080,7 +2118,7 @@ function unstep(id){
 var cur=-1, autoT=null;
 function leave(id){
   clearSlideT(); stopSims(); typeStop();
-  clearTimeout(bookSeq); clearTimeout(betFallback);
+  clearTimeout(bookSeq); clearTimeout(betFallback); clearTimeout(protoFallback);
   if (id==="s7"){ var v=$("#broll"); try{ v.pause(); }catch(e){} $("#broll-wrap").classList.remove("on"); }
 }
 function go(n){
@@ -2115,6 +2153,7 @@ var segT0=null, segSp=-1;
 function notes(){
   var s = SLIDES[cur], sp = SPEAKERS[s.sp];
   var key = s.id;
+  if (s.id==="s2" && protoShown) key = "s2b";
   if (s.id==="s9" && betShown) key = "s9b";
   if (s.id==="s10" && unitMode==="stu") key = "s10b";
   var sc = SCRIPT[key] || { t:"", cue:"" };
@@ -2172,7 +2211,7 @@ addEventListener("keydown", function(e){
   else if (k==="s"||k==="S"){ notesOn=!notesOn; $("#notes").classList.toggle("on",notesOn); }
   else if (k==="m"||k==="M") audioToggle();
   else if (k==="o"||k==="O") gridToggle();
-  else if (k==="r"||k==="R"){ betShown=false; enter(SLIDES[cur].id); }
+  else if (k==="r"||k==="R"){ betShown=false; protoShown=false; enter(SLIDES[cur].id); }
   else if (k==="f"||k==="F"){
     try {
       var pr = document.fullscreenElement ? document.exitFullscreen()

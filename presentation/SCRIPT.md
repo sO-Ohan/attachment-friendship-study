@@ -3,159 +3,159 @@
 **How attachment style shapes fear of rejection and friendship formation among BRAC University undergraduates**  
 PSY 101 · Summer 2026 · Group 02 · Section 11 · Ms. Safina Binte Enayet · BRAC University
 
-The slot is **ten minutes**. This script is **9 minutes 23 seconds** of actual speech, written at a normal presenting pace of about 145 words a minute. The thirty-seven seconds left over are for the walk-ups and the ten-second silence on slide 02. They are not for extra sentences.
+The slot is **eight minutes**. This script is **7 minutes 34 seconds**, written at about **120 words a minute**. That is a slow, deliberate pace — slower than normal conversation. It is set that way on purpose, because none of us are fluent public speakers and a script written at a fluent pace is a script you will rush.
 
-The slides carry almost no text on purpose. The words are here. Press **S** during the presentation to get this same script on screen with a live countdown, and **T** to start the timer.
+The twenty-six seconds left over are for the five handoffs and for you to breathe. They are not spare sentences. **If you finish your section early, that is a success, not a mistake.** Stop talking and hand over.
 
-Presentation marking is **individual**, so read your own section until you own it. You do not need to memorise it. Memorise your first sentence and your last sentence; improvise the middle from the numbers.
+The slides carry almost no text on purpose. The words are here. Press **S** during the presentation to get this script on screen with a live countdown, and **T** to start the timer.
+
+Marking is **individual**. Learn your own section until you own it. Do not memorise the middle — memorise your **first sentence** and your **last sentence**, and improvise between them from the numbers on screen.
 
 ## Running order
 
 | # | Slide | Speaker | Runs | Starts |
 |---|---|---|---|---|
-| 00 | The deleted message | Azmyeen | 16s | 0:00 |
-| 01 | Title | Azmyeen | 15s | 0:16 |
-| 02 | Which one is you? | Azmyeen | 24s | 0:31 |
-| 03 | Why this topic | Azmyeen | 37s | 0:55 |
-| 04 | What is new here | Tasfia | 40s | 1:32 |
-| 05 | What we set out to do | Tasfia | 39s | 2:12 |
-| 06 | Three predictions | Maysha | 74s | 2:51 |
-| 07 | Methodology | Mahir | 70s | 4:05 |
-| 08 | The paper (auto-flips) | Mahir | 13s | 5:15 |
-| 09 | Result 1 | Abdullah | 57s | 5:28 |
-| 10 | Result 2 | Abdullah | 52s | 6:25 |
-| 11 | Result 3 | Monjurul | 33s | 7:17 |
-| 12 | The models | Monjurul | 31s | 7:50 |
-| 13 | What it means | Monjurul | 28s | 8:21 |
-| 14 | Conclusion | Monjurul | 34s | 8:49 |
+| 00 | The deleted message | Azmyeen | 17s | 0:00 |
+| 01 | Title | Azmyeen | 15s | 0:17 |
+| 02 | Which one is you? | Azmyeen | 25s | 0:32 |
+| 03 | Why this topic | Azmyeen | 27s | 0:57 |
+| 04 | What is new here | Tasfia | 38s | 1:24 |
+| 05 | What we set out to do | Tasfia | 28s | 2:02 |
+| 06 | Three predictions | Maysha | 58s | 2:30 |
+| 07 | Methodology | Mahir | 48s | 3:28 |
+| 08 | The paper (auto-flips) | Mahir | 10s | 4:16 |
+| 09 | Result 1 | Abdullah | 50s | 4:26 |
+| 10 | Result 2 | Abdullah | 42s | 5:16 |
+| 11 | Result 3 | Monjurul | 28s | 5:58 |
+| 12 | The models | Monjurul | 20s | 6:26 |
+| 13 | What it means | Monjurul | 18s | 6:46 |
+| 14 | Conclusion | Monjurul | 30s | 7:04 |
 
 | Speaker | Covers | Window | Total |
 |---|---|---|---|
-| Azmyeen Nahian | Story, title, the audience moment, why this topic | 0:00 – 1:32 | 1:32 |
-| Tasfia Hasan | What is new, and what we set out to do | 1:32 – 2:51 | 1:19 |
-| Maysha Mahjabin | Who answered, the three predictions, the scoreboard | 2:51 – 4:05 | 1:14 |
-| K.M Mahir Labib | How we did it, the ethics, the paper | 4:05 – 5:28 | 1:23 |
-| Khan Abdullah | Result 1 and Result 2 | 5:28 – 7:17 | 1:49 |
-| Md. Monjurul Hasan Bhuiyan | Result 3, the models, what it means, close | 7:17 – 9:23 | 2:06 |
+| Azmyeen Nahian | Story, title, the audience moment, why this topic | 0:00 – 1:24 | 1:24 |
+| Tasfia Hasan | What is new, and what we set out to do | 1:24 – 2:30 | 1:06 |
+| Maysha Mahjabin | Who answered, the three predictions, the scoreboard | 2:30 – 3:28 | 0:58 |
+| K.M Mahir Labib | How we did it, the ethics, the paper | 3:28 – 4:26 | 0:58 |
+| Khan Abdullah | Result 1 and Result 2 | 4:26 – 5:58 | 1:32 |
+| Md. Monjurul Hasan Bhuiyan | Result 3, the models, what it means, close | 5:58 – 7:34 | 1:36 |
 
 ### If you are running late
 
-- If you are past **2:51** when Maysha starts, cut Mahir's ethics sentence to “Consent was written and names became pseudonyms.” Saves about 12 seconds.
-- If you are past **5:28** when Abdullah starts, cut Monjurul's limits sentence on slide 13. Saves about 10 seconds.
-- If you are past **7:17** when Monjurul starts, cut “Statisticians call that an ecological fallacy” from Abdullah's slide 10 next time, and on the day cut slide 13 down to its first sentence.
-- Never cut the ten-second silence on slide 02, and never cut Abdullah's callback on slide 09. Everything else in the talk is expendable before those two.
+- Check the clock at three handoff points only: **1:24** (Tasfia starts), **3:28** (Mahir starts), **5:58** (Monjurul starts). If you are on time at those three, you are on time.
+- More than 10s late at **3:28**? Mahir drops the consent sentence and says only “Consent was written, names became pseudonyms.” Saves about 8 seconds.
+- More than 15s late at **5:58**? Monjurul cuts slide 13 to its first sentence and drops the limits line. Saves about 7 seconds.
+- Still late on slide 14? Drop “Study partners, help desks, seating that rotates.” Never drop the last three sentences — Rafi, the excuse, thank you.
+- Never cut the ten-second silence on slide 02, and never cut Abdullah's callback on slide 09. Everything else in the talk goes before those two.
+- **Do not speed up to catch up.** Speeding up is how a rehearsed talk turns into an unintelligible one. Cut a sentence instead — the audience cannot miss what you never said, but they will notice you racing.
 
 ---
 
-## Azmyeen Nahian · Opening · 0:00 – 1:32
+## Azmyeen Nahian · Opening · 0:00 – 1:24
 
-### Slide 00 — the deleted message — 16s
+### Slide 00 — the deleted message — 17s
 
-*Walk on and start inside the story. No “good afternoon” yet, no “today we will be presenting our project on”. The typing animation is already running behind you. Deliver these three lines slower than feels natural.*
+*Walk on and start inside the story. No “good afternoon” yet. The typing animation is already running behind you. Say these three lines slower than feels natural — this is the one place where being slow is the whole point.*
 
-> Five weeks into the semester. Same room, same three people at the front.
+> Five weeks in. Same room, same three people at the front.
 >
 > Rafi has thought about sitting with them eleven times.
 >
 > Tonight he types four words, reads them twice, and deletes them.
 >
 
-**Cue:** **Say nothing while the four words delete.** Two full seconds of silence. That pause is the whole opening; talking over it kills the talk before it starts.
+**Cue:** **Say nothing while the four words delete.** Two full seconds of silence. Talking over it kills the talk before it starts.
 
 ### Slide 01 — title — 15s
 
-> Good afternoon. We read that paragraph out loud to nine BRAC students, and every one of them knew who Rafi was.
+> Good afternoon. We read that to nine BRAC students. All nine knew who Rafi was.
 >
-> Group 02, Section 11. Our question: how attachment style shapes fear of rejection and friendship formation here.
+> Group 02, Section 11. Our question: how attachment style shapes fear of rejection and friendship.
 >
 
 **Cue:** Do not read the six names or the three numbers off the slide. The audience reads faster than you speak.
 
-### Slide 02 — which one is you? — 24s
+### Slide 02 — which one is you? — 25s
 
-> Before any numbers, I need thirty seconds from you.
->
-> Read these four paragraphs. Pick the one that sounds most like you, and keep it to yourself.
+> I need thirty seconds from you. Read these four paragraphs. Pick the one that sounds most like you. Keep it to yourself.
 >
 
-**Cue:** **Now stop for ten seconds.** Watch the bar, not the room. Do not fill it, do not explain, do not say “take your time”. This is the single most important pause in the talk, and it is the setup for Abdullah's payoff at 5:28.
+**Cue:** **Now stop for ten seconds.** Watch the bar, not the room. Do not fill it, do not explain, do not say “take your time”. Ten seconds of silence feels like a minute when you are nervous. Trust the bar. When it fills, **press →** to put the four percentages up.
+
+**Cue:** The split is on screen now — 32 / 11 / 31 / 26. Do not read the numbers out. Say your one line and go. If you forget to press →, it reveals itself when the bar fills.
 
 > Hold on to that. Abdullah comes back to it.
 >
 
-### Slide 03 — why this topic — 37s
+### Slide 03 — why this topic — 27s
 
-> Three of us watched a friend go quiet across one semester. The only word we had was shy, and shy explains nothing.
+> Three of us watched a friend go quiet last semester. The only word we had was shy. Shy explains nothing.
 >
-> Bowlby gave psychology a better one. The internal working model: what you learn early about whether people show up, and then carry into every room after that.
+> Bowlby gave us a better word. What you learn early about whether people show up, you carry into every room after.
 >
-> Here, open credit dissolves your section every four months, so you rebuild your circle from zero.
->
-> Every dot on this screen is one student we surveyed. Sixteen have no close friend at all. Seventy-one per cent would not meet us in person.
+> Here, open credit breaks your section up every four months. You rebuild from zero.
 >
 > Tasfia.
 >
 
-**Cue:** Slow on “sixteen have no close friend at all”. Let it sit before the seventy-one per cent. Then say Tasfia's name and step back.
+**Cue:** Four sentences, four breaths. Stop after “Shy explains nothing.” Then say Tasfia's name and step back.
 
 ---
 
-## Tasfia Hasan · What is new, and what we wanted · 1:32 – 2:51
+## Tasfia Hasan · What is new, and what we wanted · 1:24 – 2:30
 
-### Slide 04 — what is new here — 40s
+### Slide 04 — what is new here — 38s
 
-> That refusal rate is why this is not a literature review. Nobody had written down what BRAC students do.
+> Nobody had written down what BRAC students do. Everything here is ours.
 >
-> So everything on this slide is ours. The data: 103 students, our questionnaire, three days in August, and a focus group we ran ourselves.
+> The data: 103 students, our own survey, our own focus group.
 >
-> The instrument: six campus situations, each rated twice. How nervous would this make you, and how well would it actually go. The standard measure multiplies those two into one score. We kept them apart.
+> The instrument: six campus situations, rated twice. How nervous would this make you, and how well would it go. The standard measure multiplies those two. We kept them apart.
 >
-> The comparison: a paragraph against a rating scale, same students, same afternoon. We went looking for a study that had run it. There isn't one.
+> The comparison: a paragraph against a rating scale, same students, same afternoon. We looked for a study that had run it. There isn't one.
 >
 
-**Cue:** This is the slide that earns the marks. Land “there isn't one” slowly, then stop for a beat. Expect a question on it; the answer is at the back of this script.
+**Cue:** This is the slide that earns the marks. Three items, and the slide already lists them — you are just saying the second half of each line. Land “there isn't one” slowly, then stop for a beat.
 
-### Slide 05 — what we set out to do — 39s
+### Slide 05 — what we set out to do — 28s
 
 > Three things we set out to do.
 >
-> First, how students of each style talk about being turned down. Not their score, their words. That is why we ran a discussion as well as a survey.
+> First, how students of each style talk about being turned down. Their words, not their score.
 >
-> Second, whether the fears people report are the ones that actually change what they do.
+> Second, whether the fears people report are the ones that change what they do.
 >
-> Third, keep the three insecure styles apart. Most studies bundle them into one bucket called insecure, and that bucket hides the group that mattered most.
->
-> So we measured what students feel against what they do: close friends held, conversations started, situations avoided.
+> Third, keep the three insecure styles apart. Most studies lump them together, and that hides the group that mattered most.
 >
 > Maysha.
 >
 
-**Cue:** Point at the two icon tiles on “what they feel” and “what they do”. The entire talk is that one comparison, so make the room see it here.
+**Cue:** Point at the two icon tiles on “what they feel” and “what they do”. The whole talk is that one comparison.
 
 ---
 
-## Maysha Mahjabin · Who answered, and the predictions · 2:51 – 4:05
+## Maysha Mahjabin · Who answered, and the predictions · 2:30 – 3:28
 
-### Slide 06 — three predictions, made before we looked — 74s
+### Slide 06 — three predictions, made before we looked — 58s
 
-> Who answered? 103 students, average age twenty-two, sixty-two men, thirty-nine women, across ten departments. One in three came out secure. Two in three did not.
+> 103 students, ten departments. One in three came out secure. Two in three did not.
 >
-> We wrote three predictions before we opened the data. That order matters, because any dataset will agree with you if you decide what you believe afterwards.
+> We wrote three predictions before we opened the data.
 >
 > One. Insecure students would feel lonelier and hold fewer close friends.
 >
-> Two. Our rating scales would predict that same loneliness and those same friendships.
+> Two. Our scales would predict that same loneliness and those same friendships.
 >
-> Three. How nervous somebody felt about approaching a person would track how badly they expected it to go.
+> Three. How nervous someone felt would track how badly they expected it to go.
 >
 
-**Cue:** Press → and let the three cards resolve one at a time. Say nothing while the two red ones turn over.
+**Cue:** Press → and let the three cards resolve one at a time. Say nothing while the two red ones turn over. That pause is four free seconds — use them to breathe.
 
-> One held, and it held hard. Secure students hold four and a half close friends. Fearful students hold under two. Less than half, and the odds of a gap that size by chance are under one in a thousand.
+> One held, hard. Secure students hold four and a half close friends. Fearful students hold under two. Under one in a thousand by chance.
 >
-> Two did not hold. Three did not hold.
+> Two and three did not.
 >
-> I am not apologising for that. We predicted the ordinary thing and the data handed us a better one. Those two red cards are where the rest of this talk lives.
+> I am not apologising for that. We predicted the ordinary thing and the data handed us a better one.
 >
 > Mahir.
 >
@@ -164,118 +164,116 @@ Presentation marking is **individual**, so read your own section until you own i
 
 ---
 
-## K.M Mahir Labib · How we did it · 4:05 – 5:28
+## K.M Mahir Labib · How we did it · 3:28 – 4:26
 
-### Slide 07 — asked twice — 70s
+### Slide 07 — asked twice — 48s
 
 > We asked the same question twice. Once with numbers, once with people talking.
 >
-> 104 students answered. We threw one out where every answer was impossible, including an age of a hundred million.
+> Now an honest confession. Our proposal promised sixteen interviews and three focus groups. We ran one group of nine, because 73 of our 103 students ticked no to any follow-up. On this campus, the topic itself is what people avoid.
 >
-> Now an honest confession. Our proposal promised sixteen interviews and three focus groups. We ran one group of nine and built a survey instead, because 73 of our 103 respondents ticked no thank you to any follow-up. Seven in ten would fill in a form. Not one of them would sit in a room with us.
+> Everyone picked a paragraph, answered three scales, then rated six situations twice. That double rating is what makes Abdullah's second result possible.
 >
-> So that stopped being a recruitment problem. On this campus, the topic itself is what people avoid.
->
-> Everyone picked a paragraph, answered scales for attachment, fear of judgement and loneliness, then rated six situations twice. That double rating is what makes Abdullah's second result possible.
->
-> In that room we never once said the words anxious or avoidant. Name someone's label and they perform it. Consent was written, names became pseudonyms, and the footage is blurred and silent because our consent covered audio, never faces.
+> Consent was written. Names became pseudonyms. The video is blurred and silent: our consent covered audio, not faces.
 >
 
-**Cue:** Gesture at the video on “in that room”. If anyone asks later, the one-line answer is: consent covered audio only, so we blurred and muted it.
+**Cue:** Gesture at the video on “blurred and silent”. Four short blocks — take a breath at each full stop. If you are behind, drop the whole consent sentence and just say “Consent was written, names became pseudonyms.”
 
-### Slide 08 — the paper, auto-flipping — 13s
+### Slide 08 — the paper, auto-flipping — 10s
 
 *The book speed-flips all 45 pages by itself and shuts on the cover. Say this while Abdullah walks up.*
 
-> All of it is written up. Forty-five pages: the four styles compared separately instead of lumped together, every situation rated twice, and three results — two of which are the nulls we kept.
+> All of it is written up. Forty-five pages, eight appendices, a fixed seed.
 >
 > Abdullah.
 >
 
+*A QR to the archived paper sits in the bottom-right corner from the moment the
+book shuts — `doi.org/10.5281/zenodo.22118219`. Do not mention it; leave it up for
+anyone photographing the screen. It stays only for this slide.*
+
 ---
 
-## Khan Abdullah · The two results · 5:28 – 7:17
+## Khan Abdullah · The two results · 4:26 – 5:58
 
-### Slide 09 — recognition beats self-rating — 57s
+### Slide 09 — recognition beats self-rating — 50s
 
-> Quick bet. No wrong answer, I just want your instinct.
->
-> To guess how many close friends a student has, what would you use? The paragraph they pointed at, or two published, validated rating scales.
+> Quick bet. To guess how many close friends a student has, what would you use? The paragraph they pointed at, or two published, validated scales.
 >
 
 **Cue:** **Pause and let the room actually pick.** Then press → to reveal. If you forget, it reveals itself after nine seconds.
 
 > The paragraph. And it is not close.
 >
-> Here is the honest test. Hide one student, build the model on the other 102, then guess the one we hid. 103 times.
+> The test: build the model on 102 students, then guess the one we left out.
 >
-> The dark line is what you'd score by just guessing the average student. Below it is worse than that. The scales are below it. The paragraph is above it, on both.
+> The dark line is guessing the average student. The scales fall below it. The paragraph sits above it.
 >
-> On a feeling, fear of being judged, the scales win. Scales know what you feel. The paragraph knows what your life looks like.
+> Scales know what you feel. The paragraph knows what your life looks like.
 >
 > And the paragraph you picked four minutes ago is the one that beat them.
 >
 
 **Cue:** That last line is the payoff for Azmyeen's opening. Land it, then stop for a beat and let the room realise they were the participants.
 
-### Slide 10 — fear is not a prediction — 52s
+### Slide 10 — fear is not a prediction — 42s
 
-> Second result. Same students, same six situations, same two questions. I change one thing, what we compare, and the answer reverses.
+> Second result. Same students, same six situations. I change what we compare, and the answer flips.
 >
-> Compare situations. Six dots. Clean line. What the room feared most is what it expected to go worst. Cheapest thing on this campus: ask a classmate to explain something. Most expensive: suggest lunch.
+> Compare situations. Six dots, clean line. What the room feared most is what it expected to go worst.
 >
 
 **Cue:** Press → (or tap the toggle) to switch from situations to students.
 
-> Now compare students inside one situation. Gone. All six bars sit on zero. How frightened a student is tells you nothing about how well they think it will go.
+> Now compare students inside one situation. Gone. All six bars sit on zero.
 >
 > Statisticians call that an ecological fallacy: true of groups, false of the people inside them.
 >
-> And the standard rejection-sensitivity score multiplies fear by expectation as if they were one thing. Ours says they are not.
+> The standard rejection score multiplies fear by expectation as if they were one thing. Ours says they are not.
 >
 > Monjurul.
 >
 
+**Cue:** “Gone.” is a one-word sentence. Say it, then stop, then carry on. It does more work than any sentence you could add.
+
 ---
 
-## Md. Monjurul Hasan Bhuiyan · Result 3, the models, and the close · 7:17 – 9:23
+## Md. Monjurul Hasan Bhuiyan · Result 3, the models, and the close · 5:58 – 7:34
 
-### Slide 11 — the room would not say it — 33s
+### Slide 11 — the room would not say it — 28s
 
-> Our third result is about us, not about them.
+> Our third result is about us, not them.
 >
-> We wrote sharp questions. Who has been Rafi this semester. Tell us about a time. Those got a real answer three times out of forty-five. The questions that asked for nothing got nine out of twenty-six. Five times the rate.
+> We asked sharp questions. Those got a real answer three times out of forty-five. The gentle questions got nine out of twenty-six.
 >
 > The harder we pushed, the less people told us.
 >
-> The most honest sentence in sixty minutes was four words long, and it was about a fictional character. I have been Rafi.
+> The most honest sentence in sixty minutes was four words. I have been Rafi.
 >
 
 **Cue:** Stop after the quote. Do not explain it. Two seconds, then move on.
 
-### Slide 12 — every claim has a model behind it — 31s
+### Slide 12 — every claim has a model behind it — 20s
 
-> Every claim here has a model under it, and they are all on this slide. The row I would frame is the last one.
+> Every claim here has a model under it. Look at the last row.
 >
-> We let a computer sort all 103 students into four groups using only the scale scores, with the labels hidden. Then we asked how well its groups matched the paragraphs students picked for themselves. Agreement, point zero three. Zero is random.
->
-> The scales cannot find the groups that students find in themselves.
+> We let a computer sort all 103 students using the scale scores alone. Its groups matched the paragraphs students picked at point zero three. Zero is random.
 >
 
-**Cue:** Point at the rows, do not read the table out. The two simulations underneath run by themselves.
+**Cue:** Point at the last row. Do not read the table out — it is there so the audience can see we are not bluffing.
 
-### Slide 13 — what it means — 28s
+### Slide 13 — what it means — 18s
 
-> Why does a paragraph beat a professional scale? Because people match themselves against a whole picture, and six separate items pull that picture apart. And someone who avoids closeness usually doesn't know they do it, so they mark themselves low on the exact item built to catch them.
+> Why does a paragraph beat a professional scale? People match themselves against a whole picture, and six separate items pull that picture apart.
 >
-> Our limits: half the sample from one department, one focus group of nine, one afternoon, so no causal claims.
+> Our limits: half the sample from one department, one focus group, one afternoon.
 >
 
-### Slide 14 — conclusion — 34s
+### Slide 14 — conclusion — 30s
 
-> One line to take out of this room. The paragraph a student recognised themselves in predicted their friendships. Two validated scales did not.
+> One line to take away. The paragraph a student recognised themselves in predicted their friendships. Two validated scales did not.
 >
-> So stop scoring students. Give them descriptions to recognise, and give them an academic reason to talk. Study partners, help desks, seating that rotates. Asking for help with coursework was the cheapest social act we measured. Suggesting lunch was the most expensive.
+> So stop scoring students. Give them descriptions to recognise, and give them a reason to talk. Study partners, help desks, seating that rotates.
 >
 > Rafi never needed a counsellor. He needed an excuse. Hey, can you explain question three?
 >
@@ -372,11 +370,14 @@ Recruit the follow-up sample before the survey rather than after it, and ask the
 
 ## How to rehearse it
 
-- Run it twice with a stopwatch before the day. The number that matters is your own slice, not the total.
-- Rehearse two beats together, out loud, at least three times: Azmyeen's ten-second silence on slide 02, and Abdullah's callback on slide 09. The opening is wasted if either one is rushed.
-- One person drives the laptop for all six speakers. Passing a laptop mid-talk costs about eight seconds each time, and there are five handoffs.
-- Learn your first sentence and your last sentence by heart. Improvise the middle from the numbers. Nobody notices a paraphrase; everybody notices a stumble in the first line.
-- Say the next speaker's name as your last word. It is the cleanest handoff there is and it prevents two people starting at once.
+- **The pace is 120 words a minute and that is deliberate.** Read one of your paragraphs aloud with a stopwatch. If you finish faster than the seconds printed next to the slide, you are rushing. Slow down until you match it.
+- Run your own section five times out loud, standing up, not in your head. Reading it silently does not rehearse the thing that goes wrong on the day, which is your breathing.
+- Every full stop in your section is a place you are allowed to breathe. The sentences were made short for exactly that reason. Take the breath — a two-second pause sounds like confidence, and “um” does not.
+- Learn your **first sentence** and your **last sentence** word for word. Improvise the middle from what is on screen. Nobody notices a paraphrase; everybody notices a stumble in the first line.
+- Say the next speaker's name as your last word. It is the cleanest handoff there is and it stops two people starting at once.
+- If you lose your place, stop and look at the slide. The slide holds the next point. Silence while you find it costs two seconds; filler costs you the room.
 - Do not read the slide. Every number on screen is legible from the back row. Your job is the sentence that is not on screen.
+- One person drives the laptop for all six speakers. Passing a laptop mid-talk costs about eight seconds each time, and there are five handoffs.
+- Rehearse two beats together, out loud, at least three times: Azmyeen's ten-second silence on slide 02, and Abdullah's callback on slide 09. The opening is wasted if either one is rushed.
+- Run the whole thing end to end twice with the timer on (**T** in the deck). The first full run always overruns. The second tells you the truth.
 - When a question comes, answer it and then stop. The answers in this script are one paragraph each on purpose.
-- Monjurul carries 2:06 and Maysha 1:14. If you want them level, hand slide 12 (the models) to Maysha — it tests the hypotheses she introduced, so it reads naturally — and update the speaker map in app.js before you rebuild.
